@@ -1,0 +1,3271 @@
+{
+ "scope": "org",
+ "title": "octo-sample-org",
+ "groups": [
+  {
+   "id": "o-g-top",
+   "title": "",
+   "pages": [
+    {
+     "id": "o-general",
+     "title": "General",
+     "path": "/organizations/octo-sample-org/settings/profile",
+     "icon": "gear",
+     "sections": [
+      {
+       "title": "General",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "text",
+         "label": "Organization display name",
+         "description": "",
+         "value": "Octo Sample",
+         "placeholder": "",
+         "id": "o-general-organization-display-name",
+         "section": "General"
+        },
+        {
+         "type": "text",
+         "label": "Email (will be public)",
+         "description": "",
+         "value": "hello@octo.example.invalid",
+         "placeholder": "",
+         "id": "o-general-email-will-be-public",
+         "section": "General"
+        },
+        {
+         "type": "textarea",
+         "label": "Description",
+         "description": "",
+         "value": "",
+         "placeholder": "Add a description",
+         "id": "o-general-description",
+         "section": "General"
+        },
+        {
+         "type": "text",
+         "label": "URL",
+         "description": "",
+         "value": "https://octo.example.invalid",
+         "placeholder": "",
+         "id": "o-general-url",
+         "section": "General"
+        },
+        {
+         "type": "text",
+         "label": "Social accounts",
+         "description": "Link to social profile, up to 4 links",
+         "value": "",
+         "placeholder": "",
+         "id": "o-general-social-accounts",
+         "section": "General"
+        },
+        {
+         "type": "text",
+         "label": "Location",
+         "description": "",
+         "value": "Denver, CO",
+         "placeholder": "",
+         "id": "o-general-location",
+         "section": "General"
+        },
+        {
+         "type": "select",
+         "label": "Billing email (Private)",
+         "description": "Receipts and billing notifications go here.",
+         "options": [
+          "billing@octo.example.invalid"
+         ],
+         "value": "billing@octo.example.invalid",
+         "id": "o-general-billing-email-private",
+         "section": "General"
+        },
+        {
+         "type": "text",
+         "label": "Gravatar email (Private)",
+         "description": "",
+         "value": "",
+         "placeholder": "",
+         "id": "o-general-gravatar-email-private",
+         "section": "General"
+        },
+        {
+         "type": "checkbox",
+         "label": "Display a Sponsor button",
+         "description": "Add a Sponsor button to the organization profile.",
+         "value": false,
+         "id": "o-general-display-a-sponsor-button",
+         "section": "General"
+        },
+        {
+         "type": "button",
+         "label": "Update profile",
+         "description": "",
+         "id": "o-general-update-profile",
+         "section": "General"
+        }
+       ]
+      },
+      {
+       "title": "Profile picture",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "button",
+         "label": "Upload new picture",
+         "description": "",
+         "id": "o-general-upload-new-picture",
+         "section": "Profile picture"
+        }
+       ]
+      },
+      {
+       "title": "Terms of Service",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "Standard Terms of Service",
+         "description": "Best for individuals wanting the freedom to move data and independent control of their organization.",
+         "id": "o-general-standard-terms-of-service",
+         "section": "Terms of Service"
+        },
+        {
+         "type": "button",
+         "label": "Switch to the GitHub Customer Agreement",
+         "description": "",
+         "id": "o-general-switch-to-the-github-customer-agreement",
+         "section": "Terms of Service"
+        }
+       ]
+      },
+      {
+       "title": "Sponsors update email",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "text",
+         "label": "Sponsors update email (Private)",
+         "description": "The developers and organizations that your organization sponsors can send you updates to this email.",
+         "value": "",
+         "placeholder": "",
+         "id": "o-general-sponsors-update-email-private",
+         "section": "Sponsors update email"
+        }
+       ]
+      },
+      {
+       "title": "Danger zone",
+       "description": "",
+       "danger": true,
+       "controls": [
+        {
+         "type": "button",
+         "label": "Rename organization",
+         "description": "Renaming your organization can have unintended side effects.",
+         "id": "o-general-rename-organization",
+         "section": "Danger zone"
+        },
+        {
+         "type": "button",
+         "label": "Archive this organization",
+         "description": "Mark this organization and all its repositories as archived and read-only.",
+         "id": "o-general-archive-this-organization",
+         "section": "Danger zone"
+        },
+        {
+         "type": "button",
+         "label": "Transfer ownership",
+         "description": "Transfer this organization to another user or to an enterprise.",
+         "id": "o-general-transfer-ownership",
+         "section": "Danger zone"
+        },
+        {
+         "type": "danger-button",
+         "label": "Delete this organization",
+         "description": "Once deleted, it will be gone forever. Please be certain.",
+         "id": "o-general-delete-this-organization",
+         "section": "Danger zone"
+        }
+       ]
+      }
+     ],
+     "about": "The organization's profile, contact and billing email, terms of service, and the danger zone: rename, archive, transfer, or delete the organization."
+    },
+    {
+     "id": "o-policies",
+     "title": "Policies",
+     "path": "/organizations/octo-sample-org/settings/policies",
+     "icon": "law",
+     "sections": [
+      {
+       "title": "Policies",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "Organization policies",
+         "description": "Policies set by your enterprise that apply to this organization.",
+         "id": "o-policies-organization-policies",
+         "section": "Policies"
+        },
+        {
+         "type": "list",
+         "label": "Enforced policies",
+         "description": "",
+         "items": [
+          "Repository visibility change \u00b7 Owners only",
+          "Copilot \u00b7 Managed by enterprise"
+         ],
+         "id": "o-policies-enforced-policies",
+         "section": "Policies"
+        },
+        {
+         "type": "link",
+         "label": "Rulesets",
+         "description": "Organization-wide rulesets for branches and tags.",
+         "id": "o-policies-rulesets",
+         "section": "Policies"
+        }
+       ]
+      }
+     ],
+     "about": "Policies set by the enterprise that apply to this organization."
+    }
+   ]
+  },
+  {
+   "id": "o-g-access",
+   "title": "Access",
+   "pages": [
+    {
+     "id": "o-billing",
+     "title": "Billing and licensing",
+     "path": "/organizations/octo-sample-org/settings/billing",
+     "icon": "credit-card",
+     "sections": [
+      {
+       "title": "Overview",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "Current metered usage",
+         "description": "Includes usage for GitHub Actions, Codespaces, Packages, Git LFS and Copilot.",
+         "id": "o-billing-current-metered-usage",
+         "section": "Overview"
+        },
+        {
+         "type": "link",
+         "label": "Usage",
+         "description": "See detailed usage by product, repository and SKU.",
+         "id": "o-billing-usage",
+         "section": "Overview"
+        },
+        {
+         "type": "link",
+         "label": "Budgets and alerts",
+         "description": "Set spending limits and receive alerts.",
+         "id": "o-billing-budgets-and-alerts",
+         "section": "Overview"
+        },
+        {
+         "type": "link",
+         "label": "Licensing",
+         "description": "Manage Copilot seats and other licenses.",
+         "id": "o-billing-licensing",
+         "section": "Overview"
+        }
+       ]
+      },
+      {
+       "title": "Plan",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "GitHub Team",
+         "description": "$4 per user/month",
+         "id": "o-billing-github-team",
+         "section": "Plan"
+        },
+        {
+         "type": "button",
+         "label": "Compare all plans",
+         "description": "",
+         "id": "o-billing-compare-all-plans",
+         "section": "Plan"
+        },
+        {
+         "type": "danger-button",
+         "label": "Downgrade to Free",
+         "description": "",
+         "id": "o-billing-downgrade-to-free",
+         "section": "Plan"
+        }
+       ]
+      },
+      {
+       "title": "Payment information",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Payment method",
+         "description": "",
+         "items": [
+          "Visa ending in 4242"
+         ],
+         "id": "o-billing-payment-method",
+         "section": "Payment information"
+        },
+        {
+         "type": "button",
+         "label": "Edit payment method",
+         "description": "",
+         "id": "o-billing-edit-payment-method",
+         "section": "Payment information"
+        },
+        {
+         "type": "text",
+         "label": "Billing email",
+         "description": "",
+         "value": "billing@octo.example.invalid",
+         "placeholder": "",
+         "id": "o-billing-billing-email",
+         "section": "Payment information"
+        },
+        {
+         "type": "textarea",
+         "label": "Additional information",
+         "description": "Add your organization's address or VAT number to receipts.",
+         "value": "",
+         "placeholder": "",
+         "id": "o-billing-additional-information",
+         "section": "Payment information"
+        },
+        {
+         "type": "list",
+         "label": "Payment history",
+         "description": "",
+         "items": [
+          "2026-09-01 \u00b7 GitHub Team \u00b7 $48.00"
+         ],
+         "id": "o-billing-payment-history",
+         "section": "Payment information"
+        }
+       ]
+      },
+      {
+       "title": "Budgets and alerts",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "text",
+         "label": "Budget amount",
+         "description": "Monthly spending limit for metered products.",
+         "value": "$0",
+         "placeholder": "",
+         "id": "o-billing-budget-amount",
+         "section": "Budgets and alerts"
+        },
+        {
+         "type": "checkbox",
+         "label": "Stop usage when budget limit is reached",
+         "description": "",
+         "value": true,
+         "id": "o-billing-stop-usage-when-budget-limit-is-reached",
+         "section": "Budgets and alerts"
+        },
+        {
+         "type": "checkbox",
+         "label": "Receive budget threshold alerts",
+         "description": "",
+         "value": true,
+         "id": "o-billing-receive-budget-threshold-alerts",
+         "section": "Budgets and alerts"
+        }
+       ]
+      }
+     ],
+     "about": "The organization's plan, payment method, usage, budgets, and receipts."
+    },
+    {
+     "id": "o-org-roles",
+     "title": "Organization roles",
+     "path": "/organizations/octo-sample-org/settings/org_role_assignments",
+     "icon": "id-badge",
+     "sections": [
+      {
+       "title": "Role management",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Pre-defined roles",
+         "description": "Organization roles grant permissions across the organization and all repositories.",
+         "items": [
+          "All-repository admin",
+          "All-repository read",
+          "All-repository write",
+          "All-repository triage",
+          "All-repository maintain",
+          "CI/CD admin",
+          "Security manager",
+          "App manager"
+         ],
+         "id": "o-org-roles-pre-defined-roles",
+         "section": "Role management"
+        },
+        {
+         "type": "button",
+         "label": "Create a role",
+         "description": "",
+         "id": "o-org-roles-create-a-role",
+         "section": "Role management"
+        }
+       ]
+      },
+      {
+       "title": "Role assignments",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Role assignments",
+         "description": "",
+         "items": [
+          "@security-team \u00b7 Security manager",
+          "@octo-ops \u00b7 CI/CD admin"
+         ],
+         "id": "o-org-roles-role-assignments",
+         "section": "Role assignments"
+        },
+        {
+         "type": "button",
+         "label": "New role assignment",
+         "description": "Assign an organization role to a user or team.",
+         "id": "o-org-roles-new-role-assignment",
+         "section": "Role assignments"
+        }
+       ]
+      }
+     ],
+     "about": "Organization-wide roles such as security manager and CI/CD admin, and who holds them."
+    },
+    {
+     "id": "o-repo-roles",
+     "title": "Repository roles",
+     "path": "/organizations/octo-sample-org/settings/roles",
+     "icon": "repo",
+     "sections": [
+      {
+       "title": "Repository roles",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Pre-defined roles",
+         "description": "Repository roles control what people can do in individual repositories.",
+         "items": [
+          "Read",
+          "Triage",
+          "Write",
+          "Maintain",
+          "Admin"
+         ],
+         "id": "o-repo-roles-pre-defined-roles",
+         "section": "Repository roles"
+        },
+        {
+         "type": "list",
+         "label": "Custom roles",
+         "description": "",
+         "items": [
+          "Security reviewer \u00b7 inherits Write"
+         ],
+         "id": "o-repo-roles-custom-roles",
+         "section": "Repository roles"
+        },
+        {
+         "type": "button",
+         "label": "Create a role",
+         "description": "Custom repository roles add fine-grained permissions on top of a base role.",
+         "id": "o-repo-roles-create-a-role",
+         "section": "Repository roles"
+        }
+       ]
+      }
+     ],
+     "about": "Repository permission levels (read, triage, write, maintain, admin) and custom repository roles."
+    },
+    {
+     "id": "o-member-privileges",
+     "title": "Member privileges",
+     "path": "/organizations/octo-sample-org/settings/member_privileges",
+     "icon": "people",
+     "sections": [
+      {
+       "title": "Base permissions",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "select",
+         "label": "Base permissions",
+         "description": "Choose the default permission level for organization members. The base permission will be applied to all repositories in the organization.",
+         "options": [
+          "No permission",
+          "Read",
+          "Write",
+          "Admin"
+         ],
+         "value": "Read",
+         "id": "o-member-privileges-base-permissions",
+         "section": "Base permissions"
+        }
+       ]
+      },
+      {
+       "title": "Repository creation",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Public",
+         "description": "Members will be able to create public repositories, visible to anyone.",
+         "value": true,
+         "id": "o-member-privileges-public",
+         "section": "Repository creation"
+        },
+        {
+         "type": "checkbox",
+         "label": "Private",
+         "description": "Members will be able to create private repositories, visible to organization members with permission.",
+         "value": true,
+         "id": "o-member-privileges-private",
+         "section": "Repository creation"
+        }
+       ]
+      },
+      {
+       "title": "Repository forking",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Allow forking of private repositories",
+         "description": "If enabled, forking is allowed on private and public repositories. If disabled, forking is only allowed on public repositories.",
+         "value": false,
+         "id": "o-member-privileges-allow-forking-of-private-repositories",
+         "section": "Repository forking"
+        }
+       ]
+      },
+      {
+       "title": "Repository discussions",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Allow users with read access to create discussions",
+         "description": "If enabled, all users with read access can create and comment on discussions in repositories of the organization.",
+         "value": true,
+         "id": "o-member-privileges-allow-users-with-read-access-to-create-d",
+         "section": "Repository discussions"
+        }
+       ]
+      },
+      {
+       "title": "Projects base permissions",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "select",
+         "label": "Projects base permissions",
+         "description": "Default permission for members on new organization projects.",
+         "options": [
+          "No access",
+          "Read",
+          "Write",
+          "Admin"
+         ],
+         "value": "Write",
+         "id": "o-member-privileges-projects-base-permissions",
+         "section": "Projects base permissions"
+        }
+       ]
+      },
+      {
+       "title": "Pages creation",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Public",
+         "description": "Members will be able to publish sites with public access control.",
+         "value": true,
+         "id": "o-member-privileges-public-2",
+         "section": "Pages creation"
+        },
+        {
+         "type": "checkbox",
+         "label": "Private",
+         "description": "Members will be able to publish sites with private access control.",
+         "value": false,
+         "id": "o-member-privileges-private-2",
+         "section": "Pages creation"
+        }
+       ]
+      },
+      {
+       "title": "Integration access requests",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Allow integration requests from outside collaborators",
+         "description": "Outside collaborators will be able to request access for GitHub or OAuth apps to access this organization and its resources.",
+         "value": false,
+         "id": "o-member-privileges-allow-integration-requests-from-outside-",
+         "section": "Integration access requests"
+        }
+       ]
+      },
+      {
+       "title": "Admin repository permissions",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Allow members to change repository visibilities for this organization",
+         "description": "If enabled, members with admin permissions for a repository will be able to change its visibility. If disabled, only organization owners can change repository visibilities.",
+         "value": false,
+         "id": "o-member-privileges-allow-members-to-change-repository-visib",
+         "section": "Admin repository permissions"
+        },
+        {
+         "type": "checkbox",
+         "label": "Allow members to delete or transfer repositories for this organization",
+         "description": "If enabled, members with admin permissions for the repository will be able to delete or transfer public and private repositories. If disabled, only organization owners can delete or transfer repositories.",
+         "value": false,
+         "id": "o-member-privileges-allow-members-to-delete-or-transfer-repo",
+         "section": "Admin repository permissions"
+        },
+        {
+         "type": "checkbox",
+         "label": "Allow repository administrators to delete issues for this organization",
+         "description": "If enabled, members with admin permissions for the repository will be able to delete issues. If disabled, only organization owners can delete issues.",
+         "value": false,
+         "id": "o-member-privileges-allow-repository-administrators-to-delet",
+         "section": "Admin repository permissions"
+        },
+        {
+         "type": "checkbox",
+         "label": "Allow members to see comment author's profile name in private repositories",
+         "description": "If enabled, members with read access to private repositories will be able to see the profile names of comment authors.",
+         "value": false,
+         "id": "o-member-privileges-allow-members-to-see-comment-author-s-pr",
+         "section": "Admin repository permissions"
+        }
+       ]
+      },
+      {
+       "title": "Member team permissions",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Allow members to create teams",
+         "description": "If enabled, any member of the organization will be able to create new teams. If disabled, only organization owners can create new teams.",
+         "value": true,
+         "id": "o-member-privileges-allow-members-to-create-teams",
+         "section": "Member team permissions"
+        }
+       ]
+      },
+      {
+       "title": "Team discussions",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Enable team discussions for this organization",
+         "description": "Allow members to use team discussions.",
+         "value": false,
+         "id": "o-member-privileges-enable-team-discussions-for-this-organiz",
+         "section": "Team discussions"
+        }
+       ]
+      },
+      {
+       "title": "App access requests",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "radio",
+         "label": "App access requests",
+         "description": "Who can request that owners install GitHub Apps or approve OAuth apps.",
+         "options": [
+          "Members and outside collaborators",
+          "Members only",
+          "Disabled"
+         ],
+         "value": "Members and outside collaborators",
+         "id": "o-member-privileges-app-access-requests",
+         "section": "App access requests"
+        }
+       ]
+      },
+      {
+       "title": "Dependency insights",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Allow members to view dependency insights",
+         "description": "Members of this organization will be able to view dependency insights.",
+         "value": true,
+         "id": "o-member-privileges-allow-members-to-view-dependency-insight",
+         "section": "Dependency insights"
+        }
+       ]
+      }
+     ],
+     "about": "What members can do by default: base repository permission, creating, forking, deleting, transferring repositories and changing their visibility between public and private, creating teams."
+    },
+    {
+     "id": "o-import-export",
+     "title": "Import/Export",
+     "path": "/organizations/octo-sample-org/settings/import-export",
+     "icon": "arrow-switch",
+     "sections": [
+      {
+       "title": "Mannequins",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Mannequins",
+         "description": "Mannequins are placeholder users created when importing repositories. Reclaim them to attribute history to real members.",
+         "items": [
+          "mona-imported \u00b7 from Bitbucket Server"
+         ],
+         "id": "o-import-export-mannequins",
+         "section": "Mannequins"
+        },
+        {
+         "type": "button",
+         "label": "Reattribute",
+         "description": "Reclaim a mannequin's contributions for a member.",
+         "id": "o-import-export-reattribute",
+         "section": "Mannequins"
+        }
+       ]
+      }
+     ],
+     "about": "Placeholder users from imported repositories and reattributing their history."
+    },
+    {
+     "id": "o-moderation",
+     "title": "Moderation",
+     "path": "/organizations/octo-sample-org/settings/blocked_users",
+     "icon": "report",
+     "sections": [
+      {
+       "title": "Blocked users",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "text",
+         "label": "Block a user",
+         "description": "Blocking a user prevents them from interacting with repositories of this organization, such as opening or commenting on issues or pull requests.",
+         "value": "",
+         "placeholder": "Search by username, full name or email address",
+         "id": "o-moderation-block-a-user",
+         "section": "Blocked users"
+        },
+        {
+         "type": "select",
+         "label": "Block duration",
+         "description": "",
+         "options": [
+          "For 1 day",
+          "For 3 days",
+          "For 7 days",
+          "For 30 days",
+          "Until it's lifted"
+         ],
+         "value": "For 1 day",
+         "id": "o-moderation-block-duration",
+         "section": "Blocked users"
+        },
+        {
+         "type": "button",
+         "label": "Block user",
+         "description": "",
+         "id": "o-moderation-block-user",
+         "section": "Blocked users"
+        },
+        {
+         "type": "list",
+         "label": "Blocked users",
+         "description": "",
+         "items": [
+          "spam-account-123 \u00b7 Blocked until lifted"
+         ],
+         "id": "o-moderation-blocked-users",
+         "section": "Blocked users"
+        }
+       ]
+      },
+      {
+       "title": "Interaction limits",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "Temporary interaction limits",
+         "description": "Temporarily restrict which external users can interact with your repositories (comment, open issues, or create pull requests) for a configurable period of time.",
+         "id": "o-moderation-temporary-interaction-limits",
+         "section": "Interaction limits"
+        },
+        {
+         "type": "radio",
+         "label": "Limit to existing users",
+         "description": "Users that have recently created their account will be unable to interact with the organization's repositories.",
+         "options": [
+          "Disabled",
+          "Enabled"
+         ],
+         "value": "Disabled",
+         "id": "o-moderation-limit-to-existing-users",
+         "section": "Interaction limits"
+        },
+        {
+         "type": "radio",
+         "label": "Limit to prior contributors",
+         "description": "Users that have not previously committed to the default branch of a repository will be unable to interact with that repository.",
+         "options": [
+          "Disabled",
+          "Enabled"
+         ],
+         "value": "Disabled",
+         "id": "o-moderation-limit-to-prior-contributors",
+         "section": "Interaction limits"
+        },
+        {
+         "type": "radio",
+         "label": "Limit to repository collaborators",
+         "description": "Users that are not collaborators of a repository will not be able to interact with that repository.",
+         "options": [
+          "Disabled",
+          "Enabled"
+         ],
+         "value": "Disabled",
+         "id": "o-moderation-limit-to-repository-collaborators",
+         "section": "Interaction limits"
+        },
+        {
+         "type": "select",
+         "label": "Enable interaction limits for",
+         "description": "",
+         "options": [
+          "24 hours",
+          "3 days",
+          "1 week",
+          "1 month",
+          "6 months"
+         ],
+         "value": "24 hours",
+         "id": "o-moderation-enable-interaction-limits-for",
+         "section": "Interaction limits"
+        }
+       ]
+      },
+      {
+       "title": "Code review limits",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Limit to users explicitly granted read or higher access",
+         "description": "When enabled, only users explicitly granted access to this organization's repositories will be able to submit pull request reviews that \"approve\" or \"request changes\".",
+         "value": false,
+         "id": "o-moderation-limit-to-users-explicitly-granted-read-o",
+         "section": "Code review limits"
+        }
+       ]
+      },
+      {
+       "title": "Moderators",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Moderators",
+         "description": "Moderators can block and unblock users, set interaction limits, and hide comments in public repositories owned by the organization.",
+         "items": [
+          "@community-team"
+         ],
+         "id": "o-moderation-moderators",
+         "section": "Moderators"
+        },
+        {
+         "type": "button",
+         "label": "Add a moderator",
+         "description": "",
+         "id": "o-moderation-add-a-moderator",
+         "section": "Moderators"
+        }
+       ]
+      }
+     ],
+     "about": "Blocking users, temporary interaction limits on the organization's public repositories, and moderators."
+    }
+   ]
+  },
+  {
+   "id": "o-g-code",
+   "title": "Code, planning, and automation",
+   "pages": [
+    {
+     "id": "o-repo-general",
+     "title": "Repository \u00b7 General",
+     "path": "/organizations/octo-sample-org/settings/repository-defaults",
+     "icon": "repo",
+     "sections": [
+      {
+       "title": "Repository default branch",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "text",
+         "label": "Default branch name",
+         "description": "Choose the default branch for new repositories in this organization. You might want to change the default name due to different workflows, or because your integrations still require \"master\" as the default branch name.",
+         "value": "main",
+         "placeholder": "",
+         "id": "o-repo-general-default-branch-name",
+         "section": "Repository default branch"
+        },
+        {
+         "type": "button",
+         "label": "Update",
+         "description": "",
+         "id": "o-repo-general-update",
+         "section": "Repository default branch"
+        }
+       ]
+      },
+      {
+       "title": "Repository labels",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Default labels",
+         "description": "Default labels applied to new repositories.",
+         "items": [
+          "bug",
+          "documentation",
+          "duplicate",
+          "enhancement",
+          "good first issue",
+          "help wanted"
+         ],
+         "id": "o-repo-general-default-labels",
+         "section": "Repository labels"
+        },
+        {
+         "type": "button",
+         "label": "New label",
+         "description": "",
+         "id": "o-repo-general-new-label",
+         "section": "Repository labels"
+        }
+       ]
+      },
+      {
+       "title": "Commit signoff",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "radio",
+         "label": "Require contributors to sign off on web-based commits",
+         "description": "Choose whether repositories will require contributors to sign off on commits they make through GitHub's web interface. Signing off is a way for contributors to affirm that their commit complies with the repository's terms, commonly the Developer Certificate of Origin (DCO).",
+         "options": [
+          "Disabled",
+          "All repositories",
+          "Allow repositories to choose"
+         ],
+         "value": "Disabled",
+         "id": "o-repo-general-require-contributors-to-sign-off-on-web-",
+         "section": "Commit signoff"
+        }
+       ]
+      }
+     ],
+     "about": "Defaults for new repositories in the organization: default branch name, labels, commit sign-off."
+    },
+    {
+     "id": "o-rulesets",
+     "title": "Repository \u00b7 Rulesets",
+     "path": "/organizations/octo-sample-org/settings/rules",
+     "icon": "checklist",
+     "sections": [
+      {
+       "title": "Rulesets",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Rulesets",
+         "description": "Rulesets define whether collaborators can delete or force push and set requirements for any pushes, such as passing status checks or a linear commit history.",
+         "items": [
+          "protect-main \u00b7 Active \u00b7 12 repositories \u00b7 Branch",
+          "release-tags \u00b7 Evaluate \u00b7 Tag"
+         ],
+         "id": "o-rulesets-rulesets",
+         "section": "Rulesets"
+        },
+        {
+         "type": "button",
+         "label": "New branch ruleset",
+         "description": "",
+         "id": "o-rulesets-new-branch-ruleset",
+         "section": "Rulesets"
+        },
+        {
+         "type": "button",
+         "label": "New tag ruleset",
+         "description": "",
+         "id": "o-rulesets-new-tag-ruleset",
+         "section": "Rulesets"
+        },
+        {
+         "type": "button",
+         "label": "New push ruleset",
+         "description": "Block pushes by file path, extension, or size across repositories.",
+         "id": "o-rulesets-new-push-ruleset",
+         "section": "Rulesets"
+        },
+        {
+         "type": "select",
+         "label": "Enforcement status",
+         "description": "",
+         "options": [
+          "Active",
+          "Evaluate",
+          "Disabled"
+         ],
+         "value": "Active",
+         "id": "o-rulesets-enforcement-status",
+         "section": "Rulesets"
+        },
+        {
+         "type": "checkbox",
+         "label": "Restrict deletions",
+         "description": "Only allow users with bypass permissions to delete matching refs.",
+         "value": true,
+         "id": "o-rulesets-restrict-deletions",
+         "section": "Rulesets"
+        },
+        {
+         "type": "checkbox",
+         "label": "Block force pushes",
+         "description": "Prevent users with push access from force pushing to refs.",
+         "value": true,
+         "id": "o-rulesets-block-force-pushes",
+         "section": "Rulesets"
+        },
+        {
+         "type": "checkbox",
+         "label": "Require a pull request before merging",
+         "description": "Require all commits be made to a non-target branch and submitted via a pull request before they can be merged.",
+         "value": false,
+         "id": "o-rulesets-require-a-pull-request-before-merging",
+         "section": "Rulesets"
+        },
+        {
+         "type": "checkbox",
+         "label": "Require status checks to pass",
+         "description": "Choose which status checks must pass before the ref is updated.",
+         "value": false,
+         "id": "o-rulesets-require-status-checks-to-pass",
+         "section": "Rulesets"
+        },
+        {
+         "type": "checkbox",
+         "label": "Require signed commits",
+         "description": "Commits pushed to matching refs must have verified signatures.",
+         "value": false,
+         "id": "o-rulesets-require-signed-commits",
+         "section": "Rulesets"
+        },
+        {
+         "type": "checkbox",
+         "label": "Require linear history",
+         "description": "Prevent merge commits from being pushed to matching refs.",
+         "value": false,
+         "id": "o-rulesets-require-linear-history",
+         "section": "Rulesets"
+        },
+        {
+         "type": "list",
+         "label": "Bypass list",
+         "description": "Exempt roles, teams, or apps from this ruleset.",
+         "items": [
+          "Organization admin \u00b7 Always"
+         ],
+         "id": "o-rulesets-bypass-list",
+         "section": "Rulesets"
+        }
+       ]
+      }
+     ],
+     "about": "Branch, tag, and push rulesets that protect branches across repositories: required reviews, status checks, blocking force pushes."
+    },
+    {
+     "id": "o-custom-properties",
+     "title": "Repository \u00b7 Custom properties",
+     "path": "/organizations/octo-sample-org/settings/custom-properties",
+     "icon": "checklist",
+     "sections": [
+      {
+       "title": "Custom properties",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Properties",
+         "description": "Custom properties allow you to decorate your repositories with information such as compliance frameworks, data sensitivity, or project details.",
+         "items": [
+          "team \u00b7 single select",
+          "data_sensitivity \u00b7 single select"
+         ],
+         "id": "o-custom-properties-properties",
+         "section": "Custom properties"
+        },
+        {
+         "type": "button",
+         "label": "New property",
+         "description": "",
+         "id": "o-custom-properties-new-property",
+         "section": "Custom properties"
+        },
+        {
+         "type": "checkbox",
+         "label": "Allow repository actors to set this property",
+         "description": "Repository admins can set the property's value.",
+         "value": false,
+         "id": "o-custom-properties-allow-repository-actors-to-set-this-prop",
+         "section": "Custom properties"
+        }
+       ]
+      }
+     ],
+     "about": "Custom metadata properties on the organization's repositories."
+    },
+    {
+     "id": "o-topics",
+     "title": "Repository \u00b7 Topics",
+     "path": "/organizations/octo-sample-org/settings/topics",
+     "icon": "checklist",
+     "sections": [
+      {
+       "title": "Topics",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "text",
+         "label": "Suggested topics",
+         "description": "Topics suggested to repository admins in this organization.",
+         "value": "internal, service, library",
+         "placeholder": "",
+         "id": "o-topics-suggested-topics",
+         "section": "Topics"
+        }
+       ]
+      }
+     ],
+     "about": "Suggested topics for the organization's repositories."
+    },
+    {
+     "id": "o-codespaces",
+     "title": "Codespaces",
+     "path": "/organizations/octo-sample-org/settings/codespaces",
+     "icon": "codespaces",
+     "sections": [
+      {
+       "title": "Codespaces access",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "radio",
+         "label": "Codespaces access",
+         "description": "Allow members to use Codespaces billed to the organization.",
+         "options": [
+          "Disabled",
+          "Enable for specific members or teams",
+          "Enable for all members",
+          "Enable for all members and outside collaborators"
+         ],
+         "value": "Disabled",
+         "id": "o-codespaces-codespaces-access",
+         "section": "Codespaces access"
+        }
+       ]
+      },
+      {
+       "title": "Codespace ownership",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "radio",
+         "label": "Codespace ownership",
+         "description": "Choose who pays for codespaces created from this organization's repositories.",
+         "options": [
+          "Organization ownership",
+          "User ownership"
+         ],
+         "value": "Organization ownership",
+         "id": "o-codespaces-codespace-ownership",
+         "section": "Codespace ownership"
+        }
+       ]
+      },
+      {
+       "title": "Policies",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "button",
+         "label": "Create Policy",
+         "description": "Restrict machine types, idle timeouts, retention periods, base images and port visibility for codespaces.",
+         "id": "o-codespaces-create-policy",
+         "section": "Policies"
+        },
+        {
+         "type": "select",
+         "label": "Maximum idle timeout",
+         "description": "",
+         "options": [
+          "30 minutes",
+          "60 minutes",
+          "240 minutes"
+         ],
+         "value": "30 minutes",
+         "id": "o-codespaces-maximum-idle-timeout",
+         "section": "Policies"
+        },
+        {
+         "type": "select",
+         "label": "Port visibility",
+         "description": "Restrict whether forwarded ports can be public.",
+         "options": [
+          "Private",
+          "Organization",
+          "Public"
+         ],
+         "value": "Private",
+         "id": "o-codespaces-port-visibility",
+         "section": "Policies"
+        }
+       ]
+      }
+     ],
+     "about": "Whether members can use Codespaces billed to the organization, and policies limiting machines and timeouts."
+    },
+    {
+     "id": "o-planning",
+     "title": "Planning",
+     "path": "/organizations/octo-sample-org/settings/planning",
+     "icon": "project",
+     "sections": [
+      {
+       "title": "Issue types",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Issue types",
+         "description": "Issue types classify and manage different types of issues across the organization.",
+         "items": [
+          "Task",
+          "Bug",
+          "Feature"
+         ],
+         "id": "o-planning-issue-types",
+         "section": "Issue types"
+        },
+        {
+         "type": "button",
+         "label": "Create new type",
+         "description": "",
+         "id": "o-planning-create-new-type",
+         "section": "Issue types"
+        }
+       ]
+      },
+      {
+       "title": "Issue fields",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Issue fields",
+         "description": "Custom fields added to issues across the organization.",
+         "items": [
+          "Priority \u00b7 single select"
+         ],
+         "id": "o-planning-issue-fields",
+         "section": "Issue fields"
+        }
+       ]
+      }
+     ],
+     "about": "Issue types and custom issue fields across the organization."
+    },
+    {
+     "id": "o-projects",
+     "title": "Projects",
+     "path": "/organizations/octo-sample-org/settings/projects",
+     "icon": "project",
+     "sections": [
+      {
+       "title": "Projects",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Enable projects for the organization",
+         "description": "Allow members to create projects in this organization.",
+         "value": true,
+         "id": "o-projects-enable-projects-for-the-organization",
+         "section": "Projects"
+        },
+        {
+         "type": "checkbox",
+         "label": "Allow members to change project visibilities for this organization",
+         "description": "Members with admin permissions can change project visibility.",
+         "value": false,
+         "id": "o-projects-allow-members-to-change-project-visibili",
+         "section": "Projects"
+        }
+       ]
+      }
+     ],
+     "about": "Whether projects are enabled for the organization."
+    },
+    {
+     "id": "o-copilot",
+     "title": "Copilot \u00b7 Policies",
+     "path": "/organizations/octo-sample-org/settings/copilot/policies",
+     "icon": "copilot",
+     "sections": [
+      {
+       "title": "Access",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "radio",
+         "label": "Copilot access",
+         "description": "Choose who in your organization can use Copilot. Seats are billed per user.",
+         "options": [
+          "Disabled",
+          "Enabled for all members",
+          "Enabled for selected members"
+         ],
+         "value": "Disabled",
+         "id": "o-copilot-copilot-access",
+         "section": "Access"
+        },
+        {
+         "type": "list",
+         "label": "Seat assignments",
+         "description": "",
+         "items": [
+          "@octo-sample \u00b7 Last active today"
+         ],
+         "id": "o-copilot-seat-assignments",
+         "section": "Access"
+        }
+       ]
+      },
+      {
+       "title": "Features",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "select",
+         "label": "Suggestions matching public code",
+         "description": "Copilot can allow or block suggestions matching public code.",
+         "options": [
+          "Blocked",
+          "Allowed"
+         ],
+         "value": "Blocked",
+         "id": "o-copilot-suggestions-matching-public-code",
+         "section": "Features"
+        },
+        {
+         "type": "select",
+         "label": "Copilot in github.com",
+         "description": "",
+         "options": [
+          "Enabled",
+          "Disabled"
+         ],
+         "value": "Enabled",
+         "id": "o-copilot-copilot-in-github-com",
+         "section": "Features"
+        },
+        {
+         "type": "select",
+         "label": "Copilot in the IDE",
+         "description": "",
+         "options": [
+          "Enabled",
+          "Disabled"
+         ],
+         "value": "Enabled",
+         "id": "o-copilot-copilot-in-the-ide",
+         "section": "Features"
+        },
+        {
+         "type": "select",
+         "label": "Copilot code review",
+         "description": "",
+         "options": [
+          "Enabled",
+          "Disabled"
+         ],
+         "value": "Enabled",
+         "id": "o-copilot-copilot-code-review",
+         "section": "Features"
+        },
+        {
+         "type": "select",
+         "label": "Copilot coding agent",
+         "description": "Let Copilot work on assigned issues and open pull requests in the organization's repositories.",
+         "options": [
+          "Disabled",
+          "Enabled"
+         ],
+         "value": "Disabled",
+         "id": "o-copilot-copilot-coding-agent",
+         "section": "Features"
+        },
+        {
+         "type": "select",
+         "label": "MCP servers in Copilot",
+         "description": "",
+         "options": [
+          "Disabled",
+          "Enabled"
+         ],
+         "value": "Disabled",
+         "id": "o-copilot-mcp-servers-in-copilot",
+         "section": "Features"
+        },
+        {
+         "type": "select",
+         "label": "Copilot Extensions",
+         "description": "",
+         "options": [
+          "Disabled",
+          "Enabled"
+         ],
+         "value": "Disabled",
+         "id": "o-copilot-copilot-extensions",
+         "section": "Features"
+        },
+        {
+         "type": "select",
+         "label": "Preview features",
+         "description": "",
+         "options": [
+          "Disabled",
+          "Enabled"
+         ],
+         "value": "Disabled",
+         "id": "o-copilot-preview-features",
+         "section": "Features"
+        }
+       ]
+      },
+      {
+       "title": "Models",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "select",
+         "label": "Anthropic Claude in Copilot",
+         "description": "",
+         "options": [
+          "Enabled",
+          "Disabled"
+         ],
+         "value": "Enabled",
+         "id": "o-copilot-anthropic-claude-in-copilot",
+         "section": "Models"
+        },
+        {
+         "type": "select",
+         "label": "Google Gemini in Copilot",
+         "description": "",
+         "options": [
+          "Disabled",
+          "Enabled"
+         ],
+         "value": "Disabled",
+         "id": "o-copilot-google-gemini-in-copilot",
+         "section": "Models"
+        }
+       ]
+      },
+      {
+       "title": "Content exclusion",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "textarea",
+         "label": "Repositories and paths to exclude",
+         "description": "Copilot will not use or suggest content from excluded files.",
+         "value": "",
+         "placeholder": "",
+         "id": "o-copilot-repositories-and-paths-to-exclude",
+         "section": "Content exclusion"
+        }
+       ]
+      }
+     ],
+     "about": "Copilot access and seats for members, which Copilot features and models are allowed, and content exclusion."
+    },
+    {
+     "id": "o-actions-general",
+     "title": "Actions \u00b7 General",
+     "path": "/organizations/octo-sample-org/settings/actions",
+     "icon": "play",
+     "sections": [
+      {
+       "title": "Policies",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "radio",
+         "label": "Actions permissions",
+         "description": "Choose which repositories are permitted to use GitHub Actions and which actions they may run.",
+         "options": [
+          "Allow all actions and reusable workflows",
+          "Allow octo-sample-org actions and reusable workflows",
+          "Allow octo-sample-org, and select non-octo-sample-org, actions and reusable workflows",
+          "Disable actions"
+         ],
+         "value": "Allow all actions and reusable workflows",
+         "id": "o-actions-general-actions-permissions",
+         "section": "Policies"
+        },
+        {
+         "type": "select",
+         "label": "Enabled repositories",
+         "description": "",
+         "options": [
+          "All repositories",
+          "Selected repositories",
+          "Disabled"
+         ],
+         "value": "All repositories",
+         "id": "o-actions-general-enabled-repositories",
+         "section": "Policies"
+        },
+        {
+         "type": "checkbox",
+         "label": "Require actions to be pinned to a full-length commit SHA",
+         "description": "",
+         "value": false,
+         "id": "o-actions-general-require-actions-to-be-pinned-to-a-full-l",
+         "section": "Policies"
+        }
+       ]
+      },
+      {
+       "title": "Artifact and log retention",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "text",
+         "label": "Artifact and log retention",
+         "description": "Choose the repository settings default for artifact and log retention. You can set a value from 1 to 90 days for public repositories.",
+         "value": "90 days",
+         "placeholder": "",
+         "id": "o-actions-general-artifact-and-log-retention",
+         "section": "Artifact and log retention"
+        }
+       ]
+      },
+      {
+       "title": "Fork pull request workflows from outside collaborators",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "radio",
+         "label": "Approval for running fork pull request workflows from contributors",
+         "description": "Choose which subset of outside collaborators will require approval to run workflows on their pull requests.",
+         "options": [
+          "Require approval for first-time contributors who are new to GitHub",
+          "Require approval for first-time contributors",
+          "Require approval for all external contributors"
+         ],
+         "value": "Require approval for first-time contributors who are new to GitHub",
+         "id": "o-actions-general-approval-for-running-fork-pull-request-w",
+         "section": "Fork pull request workflows from outside collaborators"
+        }
+       ]
+      },
+      {
+       "title": "Fork pull request workflows in private repositories",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Run workflows from fork pull requests",
+         "description": "This tells Actions to run workflows from pull requests originating from repository forks.",
+         "value": false,
+         "id": "o-actions-general-run-workflows-from-fork-pull-requests",
+         "section": "Fork pull request workflows in private repositories"
+        },
+        {
+         "type": "checkbox",
+         "label": "Send write tokens to workflows from fork pull requests",
+         "description": "This tells Actions to send a GITHUB_TOKEN with write permissions to workflows from pull requests originating from repository forks.",
+         "value": false,
+         "id": "o-actions-general-send-write-tokens-to-workflows-from-fork",
+         "section": "Fork pull request workflows in private repositories"
+        },
+        {
+         "type": "checkbox",
+         "label": "Send secrets and variables to workflows from fork pull requests",
+         "description": "This tells Actions to send repository secrets and variables to workflows from pull requests originating from repository forks.",
+         "value": false,
+         "id": "o-actions-general-send-secrets-and-variables-to-workflows-",
+         "section": "Fork pull request workflows in private repositories"
+        },
+        {
+         "type": "checkbox",
+         "label": "Require approval for fork pull request workflows",
+         "description": "Workflows from fork pull requests will require approval from someone with write access.",
+         "value": false,
+         "id": "o-actions-general-require-approval-for-fork-pull-request-w",
+         "section": "Fork pull request workflows in private repositories"
+        }
+       ]
+      },
+      {
+       "title": "Workflow permissions",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "radio",
+         "label": "Workflow permissions",
+         "description": "Choose the default permissions granted to the GITHUB_TOKEN when running workflows in this organization.",
+         "options": [
+          "Read and write permissions",
+          "Read repository contents and packages permissions"
+         ],
+         "value": "Read repository contents and packages permissions",
+         "id": "o-actions-general-workflow-permissions",
+         "section": "Workflow permissions"
+        },
+        {
+         "type": "checkbox",
+         "label": "Allow GitHub Actions to create and approve pull requests",
+         "description": "This controls whether GitHub Actions can create pull requests or submit approving pull request reviews.",
+         "value": false,
+         "id": "o-actions-general-allow-github-actions-to-create-and-appro",
+         "section": "Workflow permissions"
+        }
+       ]
+      }
+     ],
+     "about": "GitHub Actions rules for the organization: which actions are allowed, how long workflow artifacts and logs are kept, workflows from forked pull requests, and GITHUB_TOKEN permissions."
+    },
+    {
+     "id": "o-actions-runners",
+     "title": "Actions \u00b7 Runners",
+     "path": "/organizations/octo-sample-org/settings/actions/runners",
+     "icon": "server",
+     "sections": [
+      {
+       "title": "Runners",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Runners",
+         "description": "Host your own runners and customize the environment used to run jobs in your GitHub Actions workflows.",
+         "items": [
+          "ubuntu-latest-4-cores \u00b7 GitHub-hosted \u00b7 Idle",
+          "build-mac-01 \u00b7 Self-hosted \u00b7 macOS \u00b7 Active"
+         ],
+         "id": "o-actions-runners-runners",
+         "section": "Runners"
+        },
+        {
+         "type": "button",
+         "label": "New runner",
+         "description": "Add a new self-hosted or larger GitHub-hosted runner.",
+         "id": "o-actions-runners-new-runner",
+         "section": "Runners"
+        },
+        {
+         "type": "danger-button",
+         "label": "Remove runner",
+         "description": "",
+         "id": "o-actions-runners-remove-runner",
+         "section": "Runners"
+        }
+       ]
+      }
+     ],
+     "about": "Self-hosted and larger runners that execute GitHub Actions jobs."
+    },
+    {
+     "id": "o-actions-runner-groups",
+     "title": "Actions \u00b7 Runner groups",
+     "path": "/organizations/octo-sample-org/settings/actions/runner-groups",
+     "icon": "server",
+     "sections": [
+      {
+       "title": "Runner groups",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Runner groups",
+         "description": "Runner groups control which repositories and workflows can use a set of runners.",
+         "items": [
+          "Default \u00b7 All repositories",
+          "release \u00b7 2 repositories"
+         ],
+         "id": "o-actions-runner-groups-runner-groups",
+         "section": "Runner groups"
+        },
+        {
+         "type": "button",
+         "label": "New runner group",
+         "description": "",
+         "id": "o-actions-runner-groups-new-runner-group",
+         "section": "Runner groups"
+        },
+        {
+         "type": "checkbox",
+         "label": "Allow public repositories",
+         "description": "Runners in this group can be used by public repositories. Running workflows from forks of public repositories on self-hosted runners is risky.",
+         "value": false,
+         "id": "o-actions-runner-groups-allow-public-repositories",
+         "section": "Runner groups"
+        }
+       ]
+      }
+     ],
+     "about": "Groups that control which repositories can use which runners."
+    },
+    {
+     "id": "o-models",
+     "title": "Models",
+     "path": "/organizations/octo-sample-org/settings/models",
+     "icon": "ai-model",
+     "sections": [
+      {
+       "title": "GitHub Models",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "toggle",
+         "label": "Enable GitHub Models",
+         "description": "Allow members to use GitHub Models in repositories owned by this organization.",
+         "value": true,
+         "id": "o-models-enable-github-models",
+         "section": "GitHub Models"
+        },
+        {
+         "type": "radio",
+         "label": "Models allowed",
+         "description": "",
+         "options": [
+          "All publishers",
+          "Only selected models"
+         ],
+         "value": "All publishers",
+         "id": "o-models-models-allowed",
+         "section": "GitHub Models"
+        }
+       ]
+      }
+     ],
+     "about": "Whether members can use GitHub Models, and which models are allowed."
+    },
+    {
+     "id": "o-webhooks",
+     "title": "Webhooks",
+     "path": "/organizations/octo-sample-org/settings/hooks",
+     "icon": "webhook",
+     "sections": [
+      {
+       "title": "Webhooks",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Webhooks",
+         "description": "Webhooks allow external services to be notified when certain events happen. When the specified events happen, we'll send a POST request to each of the URLs you provide.",
+         "items": [
+          "https://ci.octo.example.invalid/github (push, pull_request) \u00b7 Last delivery succeeded"
+         ],
+         "id": "o-webhooks-webhooks",
+         "section": "Webhooks"
+        },
+        {
+         "type": "button",
+         "label": "Add webhook",
+         "description": "",
+         "id": "o-webhooks-add-webhook",
+         "section": "Webhooks"
+        },
+        {
+         "type": "text",
+         "label": "Payload URL",
+         "description": "",
+         "value": "",
+         "placeholder": "https://example.com/postreceive",
+         "id": "o-webhooks-payload-url",
+         "section": "Webhooks"
+        },
+        {
+         "type": "select",
+         "label": "Content type",
+         "description": "",
+         "options": [
+          "application/x-www-form-urlencoded",
+          "application/json"
+         ],
+         "value": "application/x-www-form-urlencoded",
+         "id": "o-webhooks-content-type",
+         "section": "Webhooks"
+        },
+        {
+         "type": "text",
+         "label": "Secret",
+         "description": "Used to sign payloads so you can verify deliveries came from GitHub.",
+         "value": "",
+         "placeholder": "",
+         "id": "o-webhooks-secret",
+         "section": "Webhooks"
+        },
+        {
+         "type": "radio",
+         "label": "Which events would you like to trigger this webhook?",
+         "description": "",
+         "options": [
+          "Just the push event.",
+          "Send me everything.",
+          "Let me select individual events."
+         ],
+         "value": "Just the push event.",
+         "id": "o-webhooks-which-events-would-you-like-to-trigger-t",
+         "section": "Webhooks"
+        },
+        {
+         "type": "list",
+         "label": "Recent deliveries",
+         "description": "Redeliver or inspect webhook payloads.",
+         "items": [
+          "push \u00b7 200 \u00b7 2 minutes ago"
+         ],
+         "id": "o-webhooks-recent-deliveries",
+         "section": "Webhooks"
+        }
+       ]
+      }
+     ],
+     "about": "Webhooks that send HTTP POST events to external services when things happen in the organization."
+    },
+    {
+     "id": "o-discussions",
+     "title": "Discussions",
+     "path": "/organizations/octo-sample-org/settings/discussions",
+     "icon": "comment-discussion",
+     "sections": [
+      {
+       "title": "Discussions",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Enable discussions for this organization",
+         "description": "Setting up Discussions for your organization will allow you to broadcast updates, answer questions, and hold conversations for the entire organization.",
+         "value": false,
+         "id": "o-discussions-enable-discussions-for-this-organization",
+         "section": "Discussions"
+        },
+        {
+         "type": "select",
+         "label": "Source repository",
+         "description": "",
+         "options": [
+          "octo-sample-org/.github"
+         ],
+         "value": "octo-sample-org/.github",
+         "id": "o-discussions-source-repository",
+         "section": "Discussions"
+        }
+       ]
+      }
+     ],
+     "about": "Organization-wide discussions."
+    },
+    {
+     "id": "o-packages",
+     "title": "Packages",
+     "path": "/organizations/octo-sample-org/settings/packages",
+     "icon": "package",
+     "sections": [
+      {
+       "title": "Package creation",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Public",
+         "description": "Members will be able to create public packages, visible to anyone.",
+         "value": true,
+         "id": "o-packages-public",
+         "section": "Package creation"
+        },
+        {
+         "type": "checkbox",
+         "label": "Private",
+         "description": "Members will be able to create private packages, visible to organization members with permission.",
+         "value": true,
+         "id": "o-packages-private",
+         "section": "Package creation"
+        },
+        {
+         "type": "checkbox",
+         "label": "Internal",
+         "description": "Members will be able to create internal packages, visible to all enterprise members.",
+         "value": false,
+         "id": "o-packages-internal",
+         "section": "Package creation"
+        }
+       ]
+      },
+      {
+       "title": "Default package settings",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Inherit access from source repository (recommended)",
+         "description": "New packages inherit access permissions from the linked repository.",
+         "value": true,
+         "id": "o-packages-inherit-access-from-source-repository-re",
+         "section": "Default package settings"
+        }
+       ]
+      },
+      {
+       "title": "Deleted packages",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Deleted packages",
+         "description": "",
+         "items": [
+          "ghcr.io/octo-sample-org/worker"
+         ],
+         "id": "o-packages-deleted-packages",
+         "section": "Deleted packages"
+        },
+        {
+         "type": "button",
+         "label": "Restore",
+         "description": "",
+         "id": "o-packages-restore",
+         "section": "Deleted packages"
+        }
+       ]
+      }
+     ],
+     "about": "Who can create public or private packages, default package access, and deleted packages."
+    },
+    {
+     "id": "o-pages",
+     "title": "Pages",
+     "path": "/organizations/octo-sample-org/settings/pages",
+     "icon": "browser",
+     "sections": [
+      {
+       "title": "Verified domains",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Verified domains",
+         "description": "Verify domains to restrict who can publish GitHub Pages sites to them. Verifying a domain prevents takeover attacks.",
+         "items": [
+          "docs.octo.example.invalid \u00b7 Verified"
+         ],
+         "id": "o-pages-verified-domains",
+         "section": "Verified domains"
+        },
+        {
+         "type": "button",
+         "label": "Add a domain",
+         "description": "",
+         "id": "o-pages-add-a-domain",
+         "section": "Verified domains"
+        }
+       ]
+      }
+     ],
+     "about": "Verified domains for the organization's GitHub Pages sites."
+    },
+    {
+     "id": "o-hosted-compute",
+     "title": "Hosted compute networking",
+     "path": "/organizations/octo-sample-org/settings/network_configurations",
+     "icon": "server",
+     "sections": [
+      {
+       "title": "Network configurations",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Network configurations",
+         "description": "Connect GitHub-hosted runners to your private networks with Azure Virtual Network.",
+         "items": [
+          "prod-vnet \u00b7 Azure private networking \u00b7 2 runner groups"
+         ],
+         "id": "o-hosted-compute-network-configurations",
+         "section": "Network configurations"
+        },
+        {
+         "type": "button",
+         "label": "New network configuration",
+         "description": "",
+         "id": "o-hosted-compute-new-network-configuration",
+         "section": "Network configurations"
+        }
+       ]
+      }
+     ],
+     "about": "Private networking for GitHub-hosted runners."
+    }
+   ]
+  },
+  {
+   "id": "o-g-security",
+   "title": "Security",
+   "pages": [
+    {
+     "id": "o-auth-security",
+     "title": "Authentication security",
+     "path": "/organizations/octo-sample-org/settings/security",
+     "icon": "shield-lock",
+     "sections": [
+      {
+       "title": "Two-factor authentication",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Require two-factor authentication for everyone in the octo-sample-org organization",
+         "description": "Members, billing managers, and outside collaborators who do not have two-factor authentication enabled for their personal account will be removed from the organization and will receive an email notifying them about the change.",
+         "value": false,
+         "id": "o-auth-security-require-two-factor-authentication-for-ev",
+         "section": "Two-factor authentication"
+        }
+       ]
+      },
+      {
+       "title": "SAML single sign-on",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Enable SAML authentication",
+         "description": "Enable SAML authentication for your organization through an identity provider like Azure, Okta, OneLogin, Ping Identity or your custom SAML 2.0 provider.",
+         "value": false,
+         "id": "o-auth-security-enable-saml-authentication",
+         "section": "SAML single sign-on"
+        },
+        {
+         "type": "text",
+         "label": "Sign on URL",
+         "description": "Members will be forwarded here when signing in to your organization.",
+         "value": "",
+         "placeholder": "https://yourapp.example.com/apps/appId",
+         "id": "o-auth-security-sign-on-url",
+         "section": "SAML single sign-on"
+        },
+        {
+         "type": "text",
+         "label": "Issuer",
+         "description": "Typically a unique URL generated by your SAML identity provider.",
+         "value": "",
+         "placeholder": "",
+         "id": "o-auth-security-issuer",
+         "section": "SAML single sign-on"
+        },
+        {
+         "type": "textarea",
+         "label": "Public certificate",
+         "description": "Paste your x509 certificate here.",
+         "value": "",
+         "placeholder": "",
+         "id": "o-auth-security-public-certificate",
+         "section": "SAML single sign-on"
+        },
+        {
+         "type": "checkbox",
+         "label": "Require SAML SSO authentication for all members of the octo-sample-org organization",
+         "description": "Members will be required to authenticate through your identity provider.",
+         "value": false,
+         "id": "o-auth-security-require-saml-sso-authentication-for-all-",
+         "section": "SAML single sign-on"
+        }
+       ]
+      },
+      {
+       "title": "IP allow list",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Enable IP allow list",
+         "description": "Only IP addresses in the list below may access resources owned by this organization.",
+         "value": false,
+         "id": "o-auth-security-enable-ip-allow-list",
+         "section": "IP allow list"
+        },
+        {
+         "type": "checkbox",
+         "label": "Allow access by GitHub Apps",
+         "description": "Include IP addresses from installed GitHub Apps in the allow list.",
+         "value": false,
+         "id": "o-auth-security-allow-access-by-github-apps",
+         "section": "IP allow list"
+        },
+        {
+         "type": "list",
+         "label": "IP allow list entries",
+         "description": "",
+         "items": [
+          "203.0.113.0/24 \u00b7 Office VPN"
+         ],
+         "id": "o-auth-security-ip-allow-list-entries",
+         "section": "IP allow list"
+        }
+       ]
+      },
+      {
+       "title": "SSH certificate authorities",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "SSH certificate authorities",
+         "description": "With SSH certificate authorities, members can access organization repositories over SSH using SSH certificates you provide.",
+         "items": [],
+         "id": "o-auth-security-ssh-certificate-authorities",
+         "section": "SSH certificate authorities"
+        },
+        {
+         "type": "button",
+         "label": "New CA",
+         "description": "",
+         "id": "o-auth-security-new-ca",
+         "section": "SSH certificate authorities"
+        },
+        {
+         "type": "checkbox",
+         "label": "Require SSH Certificates",
+         "description": "Only allow SSH access to repositories via SSH certificates signed by these CAs.",
+         "value": false,
+         "id": "o-auth-security-require-ssh-certificates",
+         "section": "SSH certificate authorities"
+        }
+       ]
+      }
+     ],
+     "about": "How members sign in: requiring two-factor authentication for everyone, SAML single sign-on, IP allow lists, SSH certificate authorities."
+    },
+    {
+     "id": "o-ghas-configurations",
+     "title": "Advanced Security \u00b7 Configurations",
+     "path": "/organizations/octo-sample-org/settings/security_products/configurations",
+     "icon": "shield-check",
+     "sections": [
+      {
+       "title": "Security configurations",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Security configurations",
+         "description": "Security configurations are collections of enablement settings for GitHub's security features that can be applied to repositories.",
+         "items": [
+          "GitHub recommended \u00b7 23 repositories",
+          "Strict (custom) \u00b7 4 repositories"
+         ],
+         "id": "o-ghas-configurations-security-configurations",
+         "section": "Security configurations"
+        },
+        {
+         "type": "button",
+         "label": "New configuration",
+         "description": "",
+         "id": "o-ghas-configurations-new-configuration",
+         "section": "Security configurations"
+        },
+        {
+         "type": "button",
+         "label": "Apply to",
+         "description": "Apply a configuration to all or selected repositories.",
+         "id": "o-ghas-configurations-apply-to",
+         "section": "Security configurations"
+        }
+       ]
+      },
+      {
+       "title": "Configuration settings",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "select",
+         "label": "Dependency graph",
+         "description": "",
+         "options": [
+          "Enabled",
+          "Disabled",
+          "Not set"
+         ],
+         "value": "Enabled",
+         "id": "o-ghas-configurations-dependency-graph",
+         "section": "Configuration settings"
+        },
+        {
+         "type": "select",
+         "label": "Dependabot alerts",
+         "description": "",
+         "options": [
+          "Enabled",
+          "Disabled",
+          "Not set"
+         ],
+         "value": "Enabled",
+         "id": "o-ghas-configurations-dependabot-alerts",
+         "section": "Configuration settings"
+        },
+        {
+         "type": "select",
+         "label": "Dependabot security updates",
+         "description": "",
+         "options": [
+          "Enabled",
+          "Disabled",
+          "Not set"
+         ],
+         "value": "Enabled",
+         "id": "o-ghas-configurations-dependabot-security-updates",
+         "section": "Configuration settings"
+        },
+        {
+         "type": "select",
+         "label": "Code scanning default setup",
+         "description": "",
+         "options": [
+          "Enabled",
+          "Disabled",
+          "Not set"
+         ],
+         "value": "Enabled",
+         "id": "o-ghas-configurations-code-scanning-default-setup",
+         "section": "Configuration settings"
+        },
+        {
+         "type": "select",
+         "label": "Secret scanning",
+         "description": "",
+         "options": [
+          "Enabled",
+          "Disabled",
+          "Not set"
+         ],
+         "value": "Enabled",
+         "id": "o-ghas-configurations-secret-scanning",
+         "section": "Configuration settings"
+        },
+        {
+         "type": "select",
+         "label": "Push protection",
+         "description": "Block commits that contain supported secrets.",
+         "options": [
+          "Enabled",
+          "Disabled",
+          "Not set"
+         ],
+         "value": "Enabled",
+         "id": "o-ghas-configurations-push-protection",
+         "section": "Configuration settings"
+        },
+        {
+         "type": "select",
+         "label": "Private vulnerability reporting",
+         "description": "",
+         "options": [
+          "Enabled",
+          "Disabled",
+          "Not set"
+         ],
+         "value": "Enabled",
+         "id": "o-ghas-configurations-private-vulnerability-reporting",
+         "section": "Configuration settings"
+        },
+        {
+         "type": "select",
+         "label": "Enforce configuration",
+         "description": "Prevent repository admins from changing these settings.",
+         "options": [
+          "Don't enforce",
+          "Enforce"
+         ],
+         "value": "Don't enforce",
+         "id": "o-ghas-configurations-enforce-configuration",
+         "section": "Configuration settings"
+        }
+       ]
+      }
+     ],
+     "about": "Security configurations that turn on code scanning, secret scanning, and Dependabot across repositories."
+    },
+    {
+     "id": "o-ghas-global",
+     "title": "Advanced Security \u00b7 Global settings",
+     "path": "/organizations/octo-sample-org/settings/security_products/global_settings",
+     "icon": "shield-check",
+     "sections": [
+      {
+       "title": "Dependabot",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Grouped security updates",
+         "description": "Groups all available updates that resolve a Dependabot alert into one pull request.",
+         "value": false,
+         "id": "o-ghas-global-grouped-security-updates",
+         "section": "Dependabot"
+        },
+        {
+         "type": "checkbox",
+         "label": "Dependabot on Actions runners",
+         "description": "Run Dependabot security and version updates on Actions runners.",
+         "value": true,
+         "id": "o-ghas-global-dependabot-on-actions-runners",
+         "section": "Dependabot"
+        },
+        {
+         "type": "checkbox",
+         "label": "Dependabot on self-hosted runners",
+         "description": "",
+         "value": false,
+         "id": "o-ghas-global-dependabot-on-self-hosted-runners",
+         "section": "Dependabot"
+        },
+        {
+         "type": "list",
+         "label": "Dependabot rules",
+         "description": "Auto-triage rules for Dependabot alerts.",
+         "items": [
+          "Dismiss low impact alerts for development-scoped dependencies"
+         ],
+         "id": "o-ghas-global-dependabot-rules",
+         "section": "Dependabot"
+        }
+       ]
+      },
+      {
+       "title": "Code scanning",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Recommend the extended query suite for repositories enabling default setup",
+         "description": "",
+         "value": false,
+         "id": "o-ghas-global-recommend-the-extended-query-suite-for-r",
+         "section": "Code scanning"
+        },
+        {
+         "type": "select",
+         "label": "Copilot Autofix",
+         "description": "Suggest fixes for CodeQL alerts using Copilot Autofix.",
+         "options": [
+          "On",
+          "Off"
+         ],
+         "value": "On",
+         "id": "o-ghas-global-copilot-autofix",
+         "section": "Code scanning"
+        },
+        {
+         "type": "select",
+         "label": "Check runs failure threshold",
+         "description": "Choose which security alert severities cause a pull request check to fail.",
+         "options": [
+          "High or higher / Only errors",
+          "Critical / Errors and warnings",
+          "None"
+         ],
+         "value": "High or higher / Only errors",
+         "id": "o-ghas-global-check-runs-failure-threshold",
+         "section": "Code scanning"
+        }
+       ]
+      },
+      {
+       "title": "Secret scanning",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Add a resource link in the CLI and web UI when a commit is blocked",
+         "description": "Provide a link to your internal guidance when push protection blocks a commit.",
+         "value": false,
+         "id": "o-ghas-global-add-a-resource-link-in-the-cli-and-web-u",
+         "section": "Secret scanning"
+        },
+        {
+         "type": "list",
+         "label": "Custom patterns",
+         "description": "Define your own secret patterns to scan for.",
+         "items": [
+          "internal-api-key \u00b7 Published"
+         ],
+         "id": "o-ghas-global-custom-patterns",
+         "section": "Secret scanning"
+        },
+        {
+         "type": "button",
+         "label": "New pattern",
+         "description": "",
+         "id": "o-ghas-global-new-pattern",
+         "section": "Secret scanning"
+        }
+       ]
+      }
+     ],
+     "about": "Organization-wide defaults for Dependabot, code scanning, Copilot Autofix, and secret scanning patterns."
+    },
+    {
+     "id": "o-deploy-keys",
+     "title": "Deploy keys",
+     "path": "/organizations/octo-sample-org/settings/deploy_keys",
+     "icon": "key",
+     "sections": [
+      {
+       "title": "Deploy keys",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Allow deploy keys",
+         "description": "Deploy keys can be added to repositories in this organization. Disabling this will disable existing deploy keys.",
+         "value": true,
+         "id": "o-deploy-keys-allow-deploy-keys",
+         "section": "Deploy keys"
+        },
+        {
+         "type": "info",
+         "label": "Deploy keys are added in each repository's settings",
+         "description": "Deploy keys grant access to a single repository. Add them under the repository's Settings \u203a Deploy keys.",
+         "id": "o-deploy-keys-deploy-keys-are-added-in-each-repository",
+         "section": "Deploy keys"
+        }
+       ]
+      }
+     ],
+     "about": "Whether repository deploy keys (single-repository SSH keys used by servers and CI) are allowed in the organization."
+    },
+    {
+     "id": "o-compliance",
+     "title": "Compliance",
+     "path": "/organizations/octo-sample-org/settings/compliance",
+     "icon": "checklist",
+     "sections": [
+      {
+       "title": "Compliance reports",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Reports",
+         "description": "Download GitHub's compliance reports.",
+         "items": [
+          "SOC 1, Type 2",
+          "SOC 2, Type 2",
+          "ISO/IEC 27001:2013 certificate",
+          "Cloud Security Alliance CAIQ"
+         ],
+         "id": "o-compliance-reports",
+         "section": "Compliance reports"
+        }
+       ]
+      }
+     ],
+     "about": "GitHub's compliance reports such as SOC 2 and ISO 27001."
+    },
+    {
+     "id": "o-domains",
+     "title": "Verified and approved domains",
+     "path": "/organizations/octo-sample-org/settings/domains",
+     "icon": "verified",
+     "sections": [
+      {
+       "title": "Verified & approved domains",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Domains",
+         "description": "Verify or approve domains to show a Verified badge and route email notifications only to addresses on those domains.",
+         "items": [
+          "octo.example.invalid \u00b7 Verified"
+         ],
+         "id": "o-domains-domains",
+         "section": "Verified & approved domains"
+        },
+        {
+         "type": "button",
+         "label": "Add a domain",
+         "description": "",
+         "id": "o-domains-add-a-domain",
+         "section": "Verified & approved domains"
+        },
+        {
+         "type": "checkbox",
+         "label": "Restrict email notifications to only approved or verified domains",
+         "description": "Members will only receive email notifications about the organization at addresses on these domains.",
+         "value": false,
+         "id": "o-domains-restrict-email-notifications-to-only-app",
+         "section": "Verified & approved domains"
+        }
+       ]
+      }
+     ],
+     "about": "Verified and approved email domains, and restricting notifications to them."
+    },
+    {
+     "id": "o-secrets-actions",
+     "title": "Secrets and variables \u00b7 Actions",
+     "path": "/organizations/octo-sample-org/settings/secrets/actions",
+     "icon": "lock",
+     "sections": [
+      {
+       "title": "Actions secrets and variables",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Organization secrets",
+         "description": "Secrets are encrypted and are used for sensitive data. Anyone with collaborator access to the repositories with access to each secret can use it for Actions.",
+         "items": [
+          "NPM_TOKEN \u00b7 Private repositories",
+          "DEPLOY_KEY \u00b7 3 selected repositories"
+         ],
+         "id": "o-secrets-actions-organization-secrets",
+         "section": "Actions secrets and variables"
+        },
+        {
+         "type": "button",
+         "label": "New organization secret",
+         "description": "",
+         "id": "o-secrets-actions-new-organization-secret",
+         "section": "Actions secrets and variables"
+        },
+        {
+         "type": "list",
+         "label": "Organization variables",
+         "description": "Variables are shown as plain text and are used for non-sensitive data.",
+         "items": [
+          "NODE_VERSION = 22"
+         ],
+         "id": "o-secrets-actions-organization-variables",
+         "section": "Actions secrets and variables"
+        },
+        {
+         "type": "button",
+         "label": "New organization variable",
+         "description": "",
+         "id": "o-secrets-actions-new-organization-variable",
+         "section": "Actions secrets and variables"
+        },
+        {
+         "type": "radio",
+         "label": "Repository access",
+         "description": "",
+         "options": [
+          "Public repositories",
+          "Private repositories",
+          "Selected repositories"
+         ],
+         "value": "Public repositories",
+         "id": "o-secrets-actions-repository-access",
+         "section": "Actions secrets and variables"
+        }
+       ]
+      }
+     ],
+     "about": "Encrypted secrets and plain variables shared with GitHub Actions workflows across repositories."
+    },
+    {
+     "id": "o-secrets-codespaces",
+     "title": "Secrets and variables \u00b7 Codespaces",
+     "path": "/organizations/octo-sample-org/settings/secrets/codespaces",
+     "icon": "lock",
+     "sections": [
+      {
+       "title": "Codespaces secrets",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Organization secrets",
+         "description": "Development environment secrets are exposed as environment variables in codespaces.",
+         "items": [
+          "DB_PASSWORD \u00b7 2 selected repositories"
+         ],
+         "id": "o-secrets-codespaces-organization-secrets",
+         "section": "Codespaces secrets"
+        },
+        {
+         "type": "button",
+         "label": "New organization secret",
+         "description": "",
+         "id": "o-secrets-codespaces-new-organization-secret",
+         "section": "Codespaces secrets"
+        }
+       ]
+      }
+     ],
+     "about": "Secrets shared with codespaces across repositories."
+    },
+    {
+     "id": "o-secrets-dependabot",
+     "title": "Secrets and variables \u00b7 Dependabot",
+     "path": "/organizations/octo-sample-org/settings/secrets/dependabot",
+     "icon": "lock",
+     "sections": [
+      {
+       "title": "Dependabot secrets",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Organization secrets",
+         "description": "Secrets are available to Dependabot, e.g. to access private package registries.",
+         "items": [
+          "PRIVATE_REGISTRY_TOKEN"
+         ],
+         "id": "o-secrets-dependabot-organization-secrets",
+         "section": "Dependabot secrets"
+        },
+        {
+         "type": "button",
+         "label": "New organization secret",
+         "description": "",
+         "id": "o-secrets-dependabot-new-organization-secret",
+         "section": "Dependabot secrets"
+        }
+       ]
+      }
+     ],
+     "about": "Secrets Dependabot uses, such as private registry tokens."
+    }
+   ]
+  },
+  {
+   "id": "o-g-third-party",
+   "title": "Third-party Access",
+   "pages": [
+    {
+     "id": "o-github-apps",
+     "title": "GitHub Apps",
+     "path": "/organizations/octo-sample-org/settings/installations",
+     "icon": "apps",
+     "sections": [
+      {
+       "title": "Installed GitHub Apps",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Installed GitHub Apps",
+         "description": "GitHub Apps augment and extend your workflows on GitHub with commercially supported tools, and they act with the permissions and repository access you grant them.",
+         "items": [
+          "Netlify \u00b7 All repositories",
+          "Codecov \u00b7 6 repositories"
+         ],
+         "id": "o-github-apps-installed-github-apps",
+         "section": "Installed GitHub Apps"
+        },
+        {
+         "type": "button",
+         "label": "Configure",
+         "description": "",
+         "id": "o-github-apps-configure",
+         "section": "Installed GitHub Apps"
+        },
+        {
+         "type": "danger-button",
+         "label": "Uninstall",
+         "description": "",
+         "id": "o-github-apps-uninstall",
+         "section": "Installed GitHub Apps"
+        },
+        {
+         "type": "list",
+         "label": "Pending GitHub Apps installation requests",
+         "description": "",
+         "items": [
+          "Linear \u00b7 requested by @octo-sample"
+         ],
+         "id": "o-github-apps-pending-github-apps-installation-request",
+         "section": "Installed GitHub Apps"
+        }
+       ]
+      }
+     ],
+     "about": "GitHub Apps installed in the organization and pending install requests."
+    },
+    {
+     "id": "o-oauth-policy",
+     "title": "OAuth app policy",
+     "path": "/organizations/octo-sample-org/settings/oauth_application_policy",
+     "icon": "apps",
+     "sections": [
+      {
+       "title": "Third-party application access policy",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "Policy: Access restricted",
+         "description": "Only approved applications can access data in this organization. Applications owned by octo-sample-org always have access.",
+         "id": "o-oauth-policy-policy-access-restricted",
+         "section": "Third-party application access policy"
+        },
+        {
+         "type": "danger-button",
+         "label": "Remove restrictions",
+         "description": "Allow any OAuth app authorized by a member to access the organization's data.",
+         "id": "o-oauth-policy-remove-restrictions",
+         "section": "Third-party application access policy"
+        },
+        {
+         "type": "list",
+         "label": "Approved applications",
+         "description": "",
+         "items": [
+          "Travis CI \u00b7 Approved",
+          "Heroku Dashboard \u00b7 Denied"
+         ],
+         "id": "o-oauth-policy-approved-applications",
+         "section": "Third-party application access policy"
+        }
+       ]
+      }
+     ],
+     "about": "Restricting which third-party OAuth apps can access organization data."
+    },
+    {
+     "id": "o-pat-settings",
+     "title": "Personal access tokens \u00b7 Settings",
+     "path": "/organizations/octo-sample-org/settings/personal-access-tokens",
+     "icon": "key",
+     "sections": [
+      {
+       "title": "Fine-grained personal access tokens",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "radio",
+         "label": "Restrict access via fine-grained personal access tokens",
+         "description": "API and Git access will not be allowed using fine-grained personal access tokens.",
+         "options": [
+          "Allow access via fine-grained personal access tokens",
+          "Restrict access via fine-grained personal access tokens"
+         ],
+         "value": "Allow access via fine-grained personal access tokens",
+         "id": "o-pat-settings-restrict-access-via-fine-grained-persona",
+         "section": "Fine-grained personal access tokens"
+        },
+        {
+         "type": "radio",
+         "label": "Require administrator approval",
+         "description": "All access requests by organization members must be approved by an organization owner before the token can be used.",
+         "options": [
+          "Require administrator approval",
+          "Do not require administrator approval"
+         ],
+         "value": "Require administrator approval",
+         "id": "o-pat-settings-require-administrator-approval",
+         "section": "Fine-grained personal access tokens"
+        },
+        {
+         "type": "select",
+         "label": "Maximum lifetime for fine-grained tokens",
+         "description": "",
+         "options": [
+          "No limit",
+          "30 days",
+          "90 days",
+          "366 days"
+         ],
+         "value": "No limit",
+         "id": "o-pat-settings-maximum-lifetime-for-fine-grained-tokens",
+         "section": "Fine-grained personal access tokens"
+        }
+       ]
+      },
+      {
+       "title": "Personal access tokens (classic)",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "radio",
+         "label": "Restrict personal access tokens (classic) from accessing your organizations",
+         "description": "API and Git access will not be allowed using personal access tokens (classic).",
+         "options": [
+          "Allow access via personal access tokens (classic)",
+          "Restrict access via personal access tokens (classic)"
+         ],
+         "value": "Allow access via personal access tokens (classic)",
+         "id": "o-pat-settings-restrict-personal-access-tokens-classic-",
+         "section": "Personal access tokens (classic)"
+        },
+        {
+         "type": "select",
+         "label": "Maximum lifetime for personal access tokens (classic)",
+         "description": "",
+         "options": [
+          "No limit",
+          "30 days",
+          "90 days",
+          "366 days"
+         ],
+         "value": "No limit",
+         "id": "o-pat-settings-maximum-lifetime-for-personal-access-tok",
+         "section": "Personal access tokens (classic)"
+        }
+       ]
+      }
+     ],
+     "about": "Whether members' personal access tokens can access the organization, approval, and maximum token lifetime."
+    },
+    {
+     "id": "o-pat-active",
+     "title": "Personal access tokens \u00b7 Active tokens",
+     "path": "/organizations/octo-sample-org/settings/personal-access-tokens/active",
+     "icon": "key",
+     "sections": [
+      {
+       "title": "Active tokens",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Active tokens",
+         "description": "Fine-grained tokens with access to this organization.",
+         "items": [
+          "deploy-script \u00b7 @octo-sample \u00b7 Expires Dec 1, 2026"
+         ],
+         "id": "o-pat-active-active-tokens",
+         "section": "Active tokens"
+        },
+        {
+         "type": "danger-button",
+         "label": "Revoke",
+         "description": "Revoke a member's token access to this organization.",
+         "id": "o-pat-active-revoke",
+         "section": "Active tokens"
+        }
+       ]
+      }
+     ],
+     "about": "Personal access tokens that currently have access to the organization, and revoking them."
+    },
+    {
+     "id": "o-pat-pending",
+     "title": "Personal access tokens \u00b7 Pending requests",
+     "path": "/organizations/octo-sample-org/settings/personal-access-token-requests",
+     "icon": "key",
+     "sections": [
+      {
+       "title": "Pending requests",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Pending requests",
+         "description": "Requests from members for fine-grained tokens to access this organization.",
+         "items": [
+          "release-bot token \u00b7 @octo-ops \u00b7 Contents: read and write"
+         ],
+         "id": "o-pat-pending-pending-requests",
+         "section": "Pending requests"
+        },
+        {
+         "type": "button",
+         "label": "Approve",
+         "description": "",
+         "id": "o-pat-pending-approve",
+         "section": "Pending requests"
+        },
+        {
+         "type": "danger-button",
+         "label": "Deny",
+         "description": "",
+         "id": "o-pat-pending-deny",
+         "section": "Pending requests"
+        }
+       ]
+      }
+     ],
+     "about": "Requests from members for tokens to access the organization."
+    }
+   ]
+  },
+  {
+   "id": "o-g-integrations",
+   "title": "Integrations",
+   "pages": [
+    {
+     "id": "o-reminders",
+     "title": "Scheduled reminders",
+     "path": "/organizations/octo-sample-org/settings/reminders",
+     "icon": "clock",
+     "sections": [
+      {
+       "title": "Scheduled reminders",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "Scheduled reminders",
+         "description": "Remind teams in Slack about pull requests awaiting review.",
+         "id": "o-reminders-scheduled-reminders",
+         "section": "Scheduled reminders"
+        },
+        {
+         "type": "list",
+         "label": "Reminders",
+         "description": "",
+         "items": [
+          "#eng-reviews \u00b7 Weekdays 9:00 AM \u00b7 @backend"
+         ],
+         "id": "o-reminders-reminders",
+         "section": "Scheduled reminders"
+        },
+        {
+         "type": "button",
+         "label": "Add first reminder",
+         "description": "",
+         "id": "o-reminders-add-first-reminder",
+         "section": "Scheduled reminders"
+        }
+       ]
+      }
+     ],
+     "about": "Slack reminders for teams about pull requests awaiting review."
+    }
+   ]
+  },
+  {
+   "id": "o-g-archive",
+   "title": "Archive",
+   "pages": [
+    {
+     "id": "o-audit-log",
+     "title": "Logs \u00b7 Audit log",
+     "path": "/organizations/octo-sample-org/settings/audit-log",
+     "icon": "log",
+     "sections": [
+      {
+       "title": "Audit log",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "text",
+         "label": "Filter audit log",
+         "description": "Search events like action:repo.destroy or actor:octo-sample.",
+         "value": "",
+         "placeholder": "Search audit logs",
+         "id": "o-audit-log-filter-audit-log",
+         "section": "Audit log"
+        },
+        {
+         "type": "list",
+         "label": "Recent events",
+         "description": "The audit log lists events triggered by activities that affect your organization.",
+         "items": [
+          "repo.create \u00b7 @octo-sample \u00b7 1 hour ago",
+          "org.update_member \u00b7 @octo-ops \u00b7 yesterday",
+          "protected_branch.update \u00b7 3 days ago"
+         ],
+         "id": "o-audit-log-recent-events",
+         "section": "Audit log"
+        },
+        {
+         "type": "button",
+         "label": "Export",
+         "description": "Export as JSON or CSV.",
+         "id": "o-audit-log-export",
+         "section": "Audit log"
+        },
+        {
+         "type": "button",
+         "label": "Export Git events",
+         "description": "",
+         "id": "o-audit-log-export-git-events",
+         "section": "Audit log"
+        }
+       ]
+      }
+     ],
+     "about": "The audit log of everything members did in the organization, searchable and exportable."
+    },
+    {
+     "id": "o-sponsorship-log",
+     "title": "Logs \u00b7 Sponsorship log",
+     "path": "/organizations/octo-sample-org/settings/sponsors-log",
+     "icon": "log",
+     "sections": [
+      {
+       "title": "Sponsorship log",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Sponsorship log",
+         "description": "",
+         "items": [
+          "Sponsored @maintainer-sample \u00b7 $100/month"
+         ],
+         "id": "o-sponsorship-log-sponsorship-log",
+         "section": "Sponsorship log"
+        }
+       ]
+      }
+     ],
+     "about": "The organization's GitHub Sponsors history."
+    },
+    {
+     "id": "o-deleted-repos",
+     "title": "Deleted repositories",
+     "path": "/organizations/octo-sample-org/settings/deleted_repositories",
+     "icon": "trash",
+     "sections": [
+      {
+       "title": "Deleted repositories",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Deleted repositories",
+         "description": "It may take up to an hour for repositories to be displayed here. You can only restore repositories that are not forks, or have not been forked.",
+         "items": [
+          "octo-sample-org/legacy-api \u00b7 Deleted by @octo-sample 5 days ago"
+         ],
+         "id": "o-deleted-repos-deleted-repositories",
+         "section": "Deleted repositories"
+        },
+        {
+         "type": "button",
+         "label": "Restore",
+         "description": "",
+         "id": "o-deleted-repos-restore",
+         "section": "Deleted repositories"
+        }
+       ]
+      }
+     ],
+     "about": "Restoring repositories deleted from the organization in the last 90 days."
+    }
+   ]
+  },
+  {
+   "id": "o-g-developer",
+   "title": "",
+   "pages": [
+    {
+     "id": "o-developer",
+     "title": "Developer settings",
+     "path": "/organizations/octo-sample-org/settings/apps",
+     "icon": "code",
+     "sections": [
+      {
+       "title": "GitHub Apps",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "GitHub Apps",
+         "description": "Register GitHub Apps owned by this organization.",
+         "items": [
+          "octo-release-bot"
+         ],
+         "id": "o-developer-github-apps",
+         "section": "GitHub Apps"
+        },
+        {
+         "type": "button",
+         "label": "New GitHub App",
+         "description": "",
+         "id": "o-developer-new-github-app",
+         "section": "GitHub Apps"
+        },
+        {
+         "type": "list",
+         "label": "App managers",
+         "description": "App managers can manage the settings of all GitHub Apps owned by the organization.",
+         "items": [
+          "@octo-ops"
+         ],
+         "id": "o-developer-app-managers",
+         "section": "GitHub Apps"
+        }
+       ]
+      },
+      {
+       "title": "OAuth Apps",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "OAuth Apps",
+         "description": "",
+         "items": [
+          "octo-sample dashboard"
+         ],
+         "id": "o-developer-oauth-apps",
+         "section": "OAuth Apps"
+        },
+        {
+         "type": "button",
+         "label": "New OAuth App",
+         "description": "",
+         "id": "o-developer-new-oauth-app",
+         "section": "OAuth Apps"
+        }
+       ]
+      }
+     ],
+     "about": "GitHub Apps and OAuth Apps owned by the organization, and app managers."
+    }
+   ]
+  }
+ ]
+}
