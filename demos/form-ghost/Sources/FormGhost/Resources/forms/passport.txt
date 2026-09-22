@@ -1,0 +1,19 @@
+Last name: Okafor
+First name: Maya
+Middle name: Adaeze
+Date of birth: 04/17/1991
+Place of birth: Houston, Texas
+Sex: F
+Social Security number: 000-12-3456
+Height: 5 ft 7 in
+Eye color: Brown
+Street: 2210 Lakeview Ave
+City: Portland
+State: OR
+ZIP: 97205
+Email: maya.okafor@example.invalid
+Phone: (503) 555-0142
+Passport book number: 000123456
+Issue date: 06/02/2016
+Emergency contact name: Chidi Okafor
+Emergency contact phone: (503) 555-0177

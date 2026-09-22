@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body { margin: 0; font: 14px/1.4 -apple-system, "Helvetica Neue", sans-serif; background: var(--bg, #f4f4f2); color: #1d1d1f; }
+main { max-width: 720px; margin: 32px auto; padding: 28px 32px; background: #fff; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+header.brand { max-width: 720px; margin: 24px auto 0; display: flex; align-items: center; gap: 10px; font-weight: 600; }
+h1 { font-size: 22px; margin: 0 0 4px; }
+p.lede { color: #666; margin: 0 0 20px; }
+fieldset { border: 0; border-top: 1px solid #e3e3e3; padding: 16px 0 4px; margin: 0; }
+legend { font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: #555; padding-right: 8px; }
+.row { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px 16px; margin-bottom: 12px; }
+label { display: block; font-size: 12px; font-weight: 500; color: #444; margin-bottom: 4px; }
+input[type=text], input[type=email], input[type=tel], input[type=date], input[type=number], select, textarea {
+  width: 100%; padding: 8px 10px; border: 1px solid #c9c9c9; border-radius: 6px; font: inherit; background: #fff; }
+.check { display: flex; gap: 8px; align-items: flex-start; margin: 8px 0; }
+.check label { margin: 0; font-size: 13px; font-weight: 400; }
+button { font: inherit; font-weight: 600; padding: 10px 18px; border-radius: 6px; border: 0; background: var(--accent, #0a66c2); color: #fff; margin-top: 12px; }
+button.secondary { background: #e8e8e8; color: #333; }

@@ -1,0 +1,13 @@
+First name and middle initial: Priya K
+Last name: Natarajan
+Social security number: 000-98-7654
+Address: 17 Orchard Lane
+City, state, ZIP: Madison, WI 53703
+Filing status: Married filing jointly
+Dependent credits: 4000
+Other income: 1250
+Deductions: 0
+Extra withholding: 50
+Employer name and address: Lakeshore Analytics, 400 State St, Madison WI
+First date of employment: 2026-09-08
+EIN: 00-1234567
