@@ -1,0 +1,33 @@
+{
+  "records": [
+    { "key": "first", "label": "First name", "value": "Alex", "aliases": ["Given name", "First name and middle initial"] },
+    { "key": "middle", "label": "Middle name", "value": "Jordan", "aliases": ["Middle initial"] },
+    { "key": "last", "label": "Last name", "value": "Rivera", "aliases": ["Surname", "Family name"] },
+    { "key": "full", "label": "Full name", "value": "{first} {last}", "aliases": ["Patient name", "Legal name", "Applicant name"] },
+    { "key": "pronouns", "label": "Pronouns", "value": "they/them", "aliases": ["Preferred pronouns"] },
+    { "key": "dob", "label": "Date of birth", "value": "1988-06-14", "type": "date", "aliases": ["Birth date", "DOB"] },
+    { "key": "pob", "label": "Place of birth", "value": "Denver, Colorado", "aliases": ["Birthplace"] },
+    { "key": "sex", "label": "Sex", "value": "X", "aliases": ["Gender"] },
+    { "key": "height", "label": "Height", "value": "5 ft 9 in" },
+    { "key": "eyes", "label": "Eye color", "value": "Green" },
+    { "key": "ssn", "label": "Social Security number", "value": "000-00-0000", "aliases": ["SSN"] },
+    { "key": "email", "label": "Email", "value": "alex.rivera@example.invalid", "aliases": ["Email address", "E-mail"] },
+    { "key": "phone", "label": "Phone", "value": "(720) 555-0123", "aliases": ["Mobile phone", "Primary contact phone number", "Cell phone", "Telephone"] },
+    { "key": "street", "label": "Street address", "value": "1420 Larimer Street", "aliases": ["Address", "Home address", "Street", "Address line 1", "P.O. box"] },
+    { "key": "unit", "label": "Apartment", "value": "Apt 5C", "aliases": ["Apartment, suite, etc.", "Unit", "Address line 2"] },
+    { "key": "city", "label": "City", "value": "Denver", "aliases": ["Town", "City or town"] },
+    { "key": "state", "label": "State", "value": "CO", "aliases": ["Province", "Region"] },
+    { "key": "zip", "label": "ZIP code", "value": "80202", "aliases": ["Postal code", "ZIP"] },
+    { "key": "citystatezip", "label": "City, state, and ZIP code", "value": "{city}, {state} {zip}", "aliases": ["City or town, state, and ZIP code"] },
+    { "key": "cardname", "label": "Name on card", "value": "Alex J Rivera", "aliases": ["Cardholder name"] },
+    { "key": "cardnumber", "label": "Card number", "value": "4242 4242 4242 4242", "aliases": ["Credit card number"] },
+    { "key": "cardexp", "label": "Expiration", "value": "08/29", "aliases": ["Expiration (MM/YY)", "Expiry date"] },
+    { "key": "cvc", "label": "Security code", "value": "123", "aliases": ["CVC", "CVV"] },
+    { "key": "passport", "label": "Passport book number", "value": "000000000", "aliases": ["Passport number"] },
+    { "key": "emergencyname", "label": "Emergency contact name", "value": "Sam Rivera" },
+    { "key": "emergencyphone", "label": "Emergency contact phone", "value": "(720) 555-0188" },
+    { "key": "insurer", "label": "Insurance carrier", "value": "Front Range Health", "aliases": ["Insurance provider"] },
+    { "key": "member", "label": "Member ID", "value": "FRH-0001234", "aliases": ["Subscriber ID"] },
+    { "key": "allergies", "label": "Allergies", "value": "None known" }
+  ]
+}
