@@ -1,0 +1,2956 @@
+{
+ "scope": "user",
+ "title": "octo-sample",
+ "groups": [
+  {
+   "id": "u-g-top",
+   "title": "",
+   "pages": [
+    {
+     "id": "u-profile",
+     "title": "Public profile",
+     "path": "/settings/profile",
+     "icon": "person",
+     "sections": [
+      {
+       "title": "Public profile",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "text",
+         "label": "Name",
+         "description": "Your name may appear around GitHub where you contribute or are mentioned. You can remove it at any time.",
+         "value": "Octo Sample",
+         "placeholder": "",
+         "id": "u-profile-name",
+         "section": "Public profile"
+        },
+        {
+         "type": "select",
+         "label": "Public email",
+         "description": "You have set your email address to private. To toggle email privacy, go to email settings and uncheck \"Keep my email address private.\"",
+         "options": [
+          "Select a verified email to display",
+          "octo@example.invalid"
+         ],
+         "value": "Select a verified email to display",
+         "id": "u-profile-public-email",
+         "section": "Public profile"
+        },
+        {
+         "type": "textarea",
+         "label": "Bio",
+         "description": "You can @mention other users and organizations to link to them.",
+         "value": "",
+         "placeholder": "Tell us a little bit about yourself",
+         "id": "u-profile-bio",
+         "section": "Public profile"
+        },
+        {
+         "type": "text",
+         "label": "Pronouns",
+         "description": "",
+         "value": "they/them",
+         "placeholder": "",
+         "id": "u-profile-pronouns",
+         "section": "Public profile"
+        },
+        {
+         "type": "text",
+         "label": "URL",
+         "description": "",
+         "value": "https://octo.example.invalid",
+         "placeholder": "",
+         "id": "u-profile-url",
+         "section": "Public profile"
+        },
+        {
+         "type": "text",
+         "label": "Social accounts",
+         "description": "Link to social profile 1, up to 4 links",
+         "value": "",
+         "placeholder": "",
+         "id": "u-profile-social-accounts",
+         "section": "Public profile"
+        },
+        {
+         "type": "text",
+         "label": "Company",
+         "description": "You can @mention your company's GitHub organization to link it.",
+         "value": "",
+         "placeholder": "",
+         "id": "u-profile-company",
+         "section": "Public profile"
+        },
+        {
+         "type": "text",
+         "label": "Location",
+         "description": "",
+         "value": "Denver",
+         "placeholder": "",
+         "id": "u-profile-location",
+         "section": "Public profile"
+        },
+        {
+         "type": "checkbox",
+         "label": "Display current local time",
+         "description": "Other users will see the time difference from their local time.",
+         "value": false,
+         "id": "u-profile-display-current-local-time",
+         "section": "Public profile"
+        },
+        {
+         "type": "select",
+         "label": "Time zone",
+         "description": "",
+         "options": [
+          "(GMT-07:00) Mountain Time (US & Canada)",
+          "(GMT+00:00) UTC",
+          "(GMT+01:00) Berlin"
+         ],
+         "value": "(GMT-07:00) Mountain Time (US & Canada)",
+         "id": "u-profile-time-zone",
+         "section": "Public profile"
+        },
+        {
+         "type": "button",
+         "label": "Update profile",
+         "description": "",
+         "id": "u-profile-update-profile",
+         "section": "Public profile"
+        }
+       ]
+      },
+      {
+       "title": "Profile picture",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "button",
+         "label": "Edit",
+         "description": "Upload a photo or remove the current profile picture",
+         "id": "u-profile-edit",
+         "section": "Profile picture"
+        }
+       ]
+      },
+      {
+       "title": "Contributions & activity",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Make profile private and hide activity",
+         "description": "Enabling this will hide your contributions and activity from your GitHub profile and from social features like followers, stars, feeds, leaderboards and releases.",
+         "value": false,
+         "id": "u-profile-make-profile-private-and-hide-activity",
+         "section": "Contributions & activity"
+        },
+        {
+         "type": "checkbox",
+         "label": "Include private contributions on my profile",
+         "description": "Your contribution graph, achievements, and activity overview will show your private contributions without revealing any repository or organization information.",
+         "value": true,
+         "id": "u-profile-include-private-contributions-on-my-prof",
+         "section": "Contributions & activity"
+        },
+        {
+         "type": "button",
+         "label": "Update preferences",
+         "description": "",
+         "id": "u-profile-update-preferences",
+         "section": "Contributions & activity"
+        }
+       ]
+      },
+      {
+       "title": "Profile settings",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Show Achievements on my profile",
+         "description": "Your achievements will be shown on your profile.",
+         "value": true,
+         "id": "u-profile-show-achievements-on-my-profile",
+         "section": "Profile settings"
+        }
+       ]
+      },
+      {
+       "title": "GitHub Developer Program",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "Building an application, service, or tool that integrates with GitHub? Join the GitHub Developer Program, or read more about it at our Developer site.",
+         "description": "",
+         "id": "u-profile-building-an-application-service-or-tool-",
+         "section": "GitHub Developer Program"
+        },
+        {
+         "type": "button",
+         "label": "Join the GitHub Developer Program",
+         "description": "",
+         "id": "u-profile-join-the-github-developer-program",
+         "section": "GitHub Developer Program"
+        }
+       ]
+      },
+      {
+       "title": "Jobs profile",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Available for hire",
+         "description": "Show employers you're open to new opportunities.",
+         "value": false,
+         "id": "u-profile-available-for-hire",
+         "section": "Jobs profile"
+        }
+       ]
+      },
+      {
+       "title": "Trending settings",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Preferred spoken language",
+         "description": "We'll use this language preference to filter the trending repository lists on our Trending Repositories page.",
+         "value": false,
+         "id": "u-profile-preferred-spoken-language",
+         "section": "Trending settings"
+        }
+       ]
+      },
+      {
+       "title": "ORCID iD",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "button",
+         "label": "Connect your ORCID iD",
+         "description": "ORCID provides a persistent identifier - an ORCID iD - that distinguishes you from other researchers.",
+         "id": "u-profile-connect-your-orcid-id",
+         "section": "ORCID iD"
+        }
+       ]
+      }
+     ],
+     "about": "Your public profile: name, bio, pronouns, links, company, location, avatar, and whether contributions and activity are shown."
+    },
+    {
+     "id": "u-account",
+     "title": "Account",
+     "path": "/settings/admin",
+     "icon": "gear",
+     "sections": [
+      {
+       "title": "Change username",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "Changing your username can have unintended side effects.",
+         "description": "",
+         "id": "u-account-changing-your-username-can-have-unintend",
+         "section": "Change username"
+        },
+        {
+         "type": "button",
+         "label": "Change username",
+         "description": "Changing your username can have unintended side effects. Links to your old profile and repositories will be redirected.",
+         "id": "u-account-change-username",
+         "section": "Change username"
+        }
+       ]
+      },
+      {
+       "title": "Link Patreon account",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "button",
+         "label": "Connect with Patreon",
+         "description": "Connect a Patreon account for sponsoring maintainers.",
+         "id": "u-account-connect-with-patreon",
+         "section": "Link Patreon account"
+        }
+       ]
+      },
+      {
+       "title": "Export account data",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "button",
+         "label": "Start export",
+         "description": "Export all repositories and profile metadata for @octo-sample. Exports will be available for 7 days.",
+         "id": "u-account-start-export",
+         "section": "Export account data"
+        }
+       ]
+      },
+      {
+       "title": "Successor settings",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "By clicking \"Add Successor\" below, I acknowledge that I am the owner of @octo-sample and am authorizing GitHub to transfer content within that account to my GitHub Successor, designated below, in the event of my death.",
+         "description": "",
+         "id": "u-account-by-clicking-add-successor-below-i-acknow",
+         "section": "Successor settings"
+        },
+        {
+         "type": "text",
+         "label": "Search by username, full name, or email address",
+         "description": "Designate a successor to manage your repositories if you cannot.",
+         "value": "",
+         "placeholder": "",
+         "id": "u-account-search-by-username-full-name-or-email-ad",
+         "section": "Successor settings"
+        },
+        {
+         "type": "button",
+         "label": "Add successor",
+         "description": "",
+         "id": "u-account-add-successor",
+         "section": "Successor settings"
+        }
+       ]
+      },
+      {
+       "title": "Delete account",
+       "description": "",
+       "danger": true,
+       "controls": [
+        {
+         "type": "info",
+         "label": "Once you delete your account, there is no going back. Please be certain.",
+         "description": "",
+         "id": "u-account-once-you-delete-your-account-there-is-no",
+         "section": "Delete account"
+        },
+        {
+         "type": "danger-button",
+         "label": "Delete your account",
+         "description": "Permanently delete your account and all of its data.",
+         "id": "u-account-delete-your-account",
+         "section": "Delete account"
+        }
+       ]
+      }
+     ],
+     "about": "Account-level actions: change your username, export your data, pick a successor, or delete your account."
+    },
+    {
+     "id": "u-appearance",
+     "title": "Appearance",
+     "path": "/settings/appearance",
+     "icon": "paintbrush",
+     "sections": [
+      {
+       "title": "Theme preferences",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "select",
+         "label": "Theme mode",
+         "description": "Choose how GitHub looks to you. Select a single theme, or sync with your system and automatically switch between day and night themes.",
+         "options": [
+          "Sync with system",
+          "Single theme"
+         ],
+         "value": "Sync with system",
+         "id": "u-appearance-theme-mode",
+         "section": "Theme preferences"
+        },
+        {
+         "type": "radio",
+         "label": "Day theme",
+         "description": "This theme will be active when your system is set to \"light mode\"",
+         "options": [
+          "Light default",
+          "Light high contrast",
+          "Light Protanopia & Deuteranopia",
+          "Light Tritanopia"
+         ],
+         "value": "Light default",
+         "id": "u-appearance-day-theme",
+         "section": "Theme preferences"
+        },
+        {
+         "type": "radio",
+         "label": "Night theme",
+         "description": "This theme will be active when your system is set to \"dark mode\"",
+         "options": [
+          "Dark default",
+          "Dark high contrast",
+          "Dark Protanopia & Deuteranopia",
+          "Dark Tritanopia",
+          "Dark dimmed"
+         ],
+         "value": "Dark default",
+         "id": "u-appearance-night-theme",
+         "section": "Theme preferences"
+        }
+       ]
+      },
+      {
+       "title": "Emoji skin tone preference",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "radio",
+         "label": "Preferred default emoji skin tone",
+         "description": "",
+         "options": [
+          "Default",
+          "Light",
+          "Medium-light",
+          "Medium",
+          "Medium-dark",
+          "Dark"
+         ],
+         "value": "Default",
+         "id": "u-appearance-preferred-default-emoji-skin-tone",
+         "section": "Emoji skin tone preference"
+        }
+       ]
+      },
+      {
+       "title": "Tab size preference",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "select",
+         "label": "Tab size",
+         "description": "Choose the number of spaces a tab is equal to when rendering code",
+         "options": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "8",
+          "10",
+          "12"
+         ],
+         "value": "8",
+         "id": "u-appearance-tab-size",
+         "section": "Tab size preference"
+        }
+       ]
+      },
+      {
+       "title": "Markdown editor font preference",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Use a fixed-width (monospace) font when editing Markdown",
+         "description": "Font preference for plain text editors that support Markdown styling (e.g. pull request and issue descriptions, comments.)",
+         "value": false,
+         "id": "u-appearance-use-a-fixed-width-monospace-font-when-ed",
+         "section": "Markdown editor font preference"
+        }
+       ]
+      }
+     ],
+     "about": "How GitHub looks: light, dark, dimmed and high-contrast themes, emoji skin tone, tab size, and editor font."
+    },
+    {
+     "id": "u-accessibility",
+     "title": "Accessibility",
+     "path": "/settings/accessibility",
+     "icon": "accessibility",
+     "sections": [
+      {
+       "title": "Keyboard shortcuts",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Character keys",
+         "description": "Enable GitHub shortcuts that don't use modifier keys in their activation. For example, the g n shortcut to navigate to notifications, or ? to view context relevant shortcuts.",
+         "value": true,
+         "id": "u-accessibility-character-keys",
+         "section": "Keyboard shortcuts"
+        },
+        {
+         "type": "checkbox",
+         "label": "Command palette",
+         "description": "Modify the shortcuts to trigger the Command Palette for the default search mode and the command mode",
+         "value": true,
+         "id": "u-accessibility-command-palette",
+         "section": "Keyboard shortcuts"
+        }
+       ]
+      },
+      {
+       "title": "Motion",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "radio",
+         "label": "Autoplay animated images",
+         "description": "Select whether animated images should play automatically.",
+         "options": [
+          "Sync with system",
+          "Enabled",
+          "Disabled"
+         ],
+         "value": "Sync with system",
+         "id": "u-accessibility-autoplay-animated-images",
+         "section": "Motion"
+        }
+       ]
+      },
+      {
+       "title": "Content",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Link underlines",
+         "description": "Toggle the visibility of underlines on links that are adjacent to text.",
+         "value": false,
+         "id": "u-accessibility-link-underlines",
+         "section": "Content"
+        },
+        {
+         "type": "checkbox",
+         "label": "Hovercards",
+         "description": "Enable previewing link content via mouse hover or keyboard focus before navigation. Move focus to hovercards using the alt + \u2b06 keyboard shortcut.",
+         "value": true,
+         "id": "u-accessibility-hovercards",
+         "section": "Content"
+        }
+       ]
+      },
+      {
+       "title": "Beta features",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Use a bottom sheet for dialogs on narrow viewports",
+         "description": "",
+         "value": false,
+         "id": "u-accessibility-use-a-bottom-sheet-for-dialogs-on-narrow",
+         "section": "Beta features"
+        }
+       ]
+      }
+     ],
+     "about": "Keyboard shortcuts including single-key character shortcuts, command palette keys, animated image autoplay, link underlines, and hovercards."
+    },
+    {
+     "id": "u-notifications",
+     "title": "Notifications",
+     "path": "/settings/notifications",
+     "icon": "bell",
+     "sections": [
+      {
+       "title": "Default notifications email",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "select",
+         "label": "Default notifications email",
+         "description": "Choose which email updates and notifications go to.",
+         "options": [
+          "octo@example.invalid",
+          "octo-sample@users.noreply.github.com"
+         ],
+         "value": "octo@example.invalid",
+         "id": "u-notifications-default-notifications-email",
+         "section": "Default notifications email"
+        },
+        {
+         "type": "link",
+         "label": "Custom routing",
+         "description": "You can send notifications to different verified email addresses depending on the organization that owns the repository.",
+         "id": "u-notifications-custom-routing",
+         "section": "Default notifications email"
+        }
+       ]
+      },
+      {
+       "title": "Automatically watch repositories",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Automatically watch repositories",
+         "description": "When you're given push access to a repository, automatically receive notifications for it.",
+         "value": true,
+         "id": "u-notifications-automatically-watch-repositories",
+         "section": "Automatically watch repositories"
+        },
+        {
+         "type": "checkbox",
+         "label": "Automatically watch teams",
+         "description": "Anytime you join a new team, you will automatically be subscribed to updates and receive notification when that team is @mentioned.",
+         "value": true,
+         "id": "u-notifications-automatically-watch-teams",
+         "section": "Automatically watch repositories"
+        }
+       ]
+      },
+      {
+       "title": "Subscriptions",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "select",
+         "label": "Watching",
+         "description": "Notifications for all repositories, teams, or conversations you're watching.",
+         "options": [
+          "On GitHub, Email",
+          "On GitHub",
+          "Email",
+          "Don't notify"
+         ],
+         "value": "On GitHub, Email",
+         "id": "u-notifications-watching",
+         "section": "Subscriptions"
+        },
+        {
+         "type": "select",
+         "label": "Participating, @mentions and custom",
+         "description": "Notifications for the conversations you are participating in, or if someone cites you with an @mention. Also for all activity when subscribed to specific events.",
+         "options": [
+          "On GitHub, Email",
+          "On GitHub",
+          "Email",
+          "Don't notify"
+         ],
+         "value": "On GitHub, Email",
+         "id": "u-notifications-participating-mentions-and-custom",
+         "section": "Subscriptions"
+        },
+        {
+         "type": "select",
+         "label": "Customize email updates",
+         "description": "Choose which additional events you'll receive emails for when participating or watching.",
+         "options": [
+          "Reviews",
+          "Pushes",
+          "Comments on Issues and Pull Requests",
+          "Includes your own updates"
+         ],
+         "value": "Reviews",
+         "id": "u-notifications-customize-email-updates",
+         "section": "Subscriptions"
+        },
+        {
+         "type": "checkbox",
+         "label": "Ignored repositories",
+         "description": "You'll never be notified.",
+         "value": false,
+         "id": "u-notifications-ignored-repositories",
+         "section": "Subscriptions"
+        }
+       ]
+      },
+      {
+       "title": "System",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "select",
+         "label": "Actions",
+         "description": "Notifications for workflow runs on repositories set up with GitHub Actions.",
+         "options": [
+          "On GitHub, Email",
+          "On GitHub",
+          "Email",
+          "Don't notify"
+         ],
+         "value": "On GitHub, Email",
+         "id": "u-notifications-actions",
+         "section": "System"
+        },
+        {
+         "type": "checkbox",
+         "label": "Only notify for failed workflows",
+         "description": "Send notifications for failed workflows only.",
+         "value": true,
+         "id": "u-notifications-only-notify-for-failed-workflows",
+         "section": "System"
+        },
+        {
+         "type": "select",
+         "label": "Dependabot alerts: New vulnerabilities",
+         "description": "When you're given access to Dependabot alerts automatically receive notifications when a new vulnerability is found in one of your dependencies.",
+         "options": [
+          "On GitHub, Email, CLI",
+          "On GitHub",
+          "Email",
+          "Don't notify"
+         ],
+         "value": "On GitHub, Email, CLI",
+         "id": "u-notifications-dependabot-alerts-new-vulnerabilities",
+         "section": "System"
+        },
+        {
+         "type": "select",
+         "label": "Dependabot alerts: Email digest",
+         "description": "Email a regular summary of Dependabot alerts for up to 10 of your repositories.",
+         "options": [
+          "Weekly",
+          "Daily",
+          "Off"
+         ],
+         "value": "Weekly",
+         "id": "u-notifications-dependabot-alerts-email-digest",
+         "section": "System"
+        },
+        {
+         "type": "select",
+         "label": "Security campaign emails",
+         "description": "Receive email notifications about security campaigns in repositories where you have access to alerts.",
+         "options": [
+          "On",
+          "Off"
+         ],
+         "value": "On",
+         "id": "u-notifications-security-campaign-emails",
+         "section": "System"
+        },
+        {
+         "type": "select",
+         "label": "Deploy key alert email",
+         "description": "When you are given admin permissions to an organization, automatically receive notifications when a new deploy key is added.",
+         "options": [
+          "On",
+          "Off"
+         ],
+         "value": "On",
+         "id": "u-notifications-deploy-key-alert-email",
+         "section": "System"
+        }
+       ]
+      },
+      {
+       "title": "Email notification preferences",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Comments on Issues and Pull Requests",
+         "description": "",
+         "value": true,
+         "id": "u-notifications-comments-on-issues-and-pull-requests",
+         "section": "Email notification preferences"
+        },
+        {
+         "type": "checkbox",
+         "label": "Pull Request reviews",
+         "description": "",
+         "value": true,
+         "id": "u-notifications-pull-request-reviews",
+         "section": "Email notification preferences"
+        },
+        {
+         "type": "checkbox",
+         "label": "Pull Request pushes",
+         "description": "",
+         "value": true,
+         "id": "u-notifications-pull-request-pushes",
+         "section": "Email notification preferences"
+        },
+        {
+         "type": "checkbox",
+         "label": "Include your own updates",
+         "description": "Receive email for activity you initiated yourself.",
+         "value": false,
+         "id": "u-notifications-include-your-own-updates",
+         "section": "Email notification preferences"
+        }
+       ]
+      },
+      {
+       "title": "Mobile",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "GitHub Mobile push notifications",
+         "description": "Receive notifications on your phone with the GitHub Mobile app.",
+         "value": true,
+         "id": "u-notifications-github-mobile-push-notifications",
+         "section": "Mobile"
+        }
+       ]
+      }
+     ],
+     "about": "Which events notify you and where, by email or on GitHub: watching, participating, @mentions, GitHub Actions workflow runs, Dependabot alerts."
+    }
+   ]
+  },
+  {
+   "id": "u-g-access",
+   "title": "Access",
+   "pages": [
+    {
+     "id": "u-billing",
+     "title": "Billing and licensing",
+     "path": "/settings/billing",
+     "icon": "credit-card",
+     "sections": [
+      {
+       "title": "Overview",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "Current metered usage",
+         "description": "Includes usage for GitHub Actions, Codespaces, Packages, Git LFS and Copilot.",
+         "id": "u-billing-current-metered-usage",
+         "section": "Overview"
+        },
+        {
+         "type": "link",
+         "label": "Usage",
+         "description": "See detailed usage by product, repository and SKU.",
+         "id": "u-billing-usage",
+         "section": "Overview"
+        },
+        {
+         "type": "link",
+         "label": "Budgets and alerts",
+         "description": "Set spending limits and get notified when usage approaches them.",
+         "id": "u-billing-budgets-and-alerts",
+         "section": "Overview"
+        },
+        {
+         "type": "link",
+         "label": "Licensing",
+         "description": "Manage Copilot and other seat-based licenses.",
+         "id": "u-billing-licensing",
+         "section": "Overview"
+        }
+       ]
+      },
+      {
+       "title": "Payment information",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Payment method",
+         "description": "The card or PayPal account billed for paid features.",
+         "items": [
+          "Visa ending in 4242, expires 08/29"
+         ],
+         "id": "u-billing-payment-method",
+         "section": "Payment information"
+        },
+        {
+         "type": "button",
+         "label": "Edit payment method",
+         "description": "",
+         "id": "u-billing-edit-payment-method",
+         "section": "Payment information"
+        },
+        {
+         "type": "text",
+         "label": "Billing email",
+         "description": "Receipts are sent to this address.",
+         "value": "octo@example.invalid",
+         "placeholder": "",
+         "id": "u-billing-billing-email",
+         "section": "Payment information"
+        },
+        {
+         "type": "textarea",
+         "label": "Additional information",
+         "description": "Add your name, address, or VAT number to receipts.",
+         "value": "",
+         "placeholder": "",
+         "id": "u-billing-additional-information",
+         "section": "Payment information"
+        },
+        {
+         "type": "list",
+         "label": "Payment history",
+         "description": "",
+         "items": [
+          "2026-09-01 \u00b7 GitHub Pro \u00b7 $4.00",
+          "2026-08-01 \u00b7 GitHub Pro \u00b7 $4.00"
+         ],
+         "id": "u-billing-payment-history",
+         "section": "Payment information"
+        }
+       ]
+      },
+      {
+       "title": "Current plan",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "GitHub Pro",
+         "description": "Advanced tools for personal accounts.",
+         "id": "u-billing-github-pro",
+         "section": "Current plan"
+        },
+        {
+         "type": "button",
+         "label": "Compare all plans",
+         "description": "",
+         "id": "u-billing-compare-all-plans",
+         "section": "Current plan"
+        },
+        {
+         "type": "danger-button",
+         "label": "Downgrade to Free",
+         "description": "You will lose access to Pro features at the end of the billing cycle.",
+         "id": "u-billing-downgrade-to-free",
+         "section": "Current plan"
+        }
+       ]
+      },
+      {
+       "title": "Budgets and alerts",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "text",
+         "label": "Budget amount",
+         "description": "Monthly spending limit for metered products.",
+         "value": "$0",
+         "placeholder": "",
+         "id": "u-billing-budget-amount",
+         "section": "Budgets and alerts"
+        },
+        {
+         "type": "checkbox",
+         "label": "Stop usage when budget limit is reached",
+         "description": "",
+         "value": true,
+         "id": "u-billing-stop-usage-when-budget-limit-is-reached",
+         "section": "Budgets and alerts"
+        },
+        {
+         "type": "checkbox",
+         "label": "Receive budget threshold alerts",
+         "description": "Get an email at 75%, 90% and 100% of your budget.",
+         "value": true,
+         "id": "u-billing-receive-budget-threshold-alerts",
+         "section": "Budgets and alerts"
+        }
+       ]
+      }
+     ],
+     "about": "Your plan, payment method, usage of paid products, spending budgets, and receipts."
+    },
+    {
+     "id": "u-emails",
+     "title": "Emails",
+     "path": "/settings/emails",
+     "icon": "mail",
+     "sections": [
+      {
+       "title": "Emails",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Email addresses",
+         "description": "Your primary email address will be used for account-related notifications.",
+         "items": [
+          "octo@example.invalid \u2014 Primary \u00b7 Visible in emails \u00b7 Receives notifications"
+         ],
+         "id": "u-emails-email-addresses",
+         "section": "Emails"
+        },
+        {
+         "type": "text",
+         "label": "Add email address",
+         "description": "",
+         "value": "",
+         "placeholder": "Email address",
+         "id": "u-emails-add-email-address",
+         "section": "Emails"
+        },
+        {
+         "type": "button",
+         "label": "Add",
+         "description": "",
+         "id": "u-emails-add",
+         "section": "Emails"
+        }
+       ]
+      },
+      {
+       "title": "Primary email address",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "select",
+         "label": "Primary email address",
+         "description": "Select an email to be used for account-related notifications and can be used for password reset.",
+         "options": [
+          "octo@example.invalid"
+         ],
+         "value": "octo@example.invalid",
+         "id": "u-emails-primary-email-address",
+         "section": "Primary email address"
+        }
+       ]
+      },
+      {
+       "title": "Backup email address",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "select",
+         "label": "Backup email address",
+         "description": "Your backup GitHub email address will be used as an additional destination for security-relevant account notifications and can also be used for password resets.",
+         "options": [
+          "Allow all verified emails",
+          "Only allow primary email"
+         ],
+         "value": "Allow all verified emails",
+         "id": "u-emails-backup-email-address",
+         "section": "Backup email address"
+        }
+       ]
+      },
+      {
+       "title": "Keep my email addresses private",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Keep my email addresses private",
+         "description": "We'll remove your public profile email and use octo-sample@users.noreply.github.com when performing web-based Git operations (e.g. edits and merges) and sending email on your behalf.",
+         "value": true,
+         "id": "u-emails-keep-my-email-addresses-private",
+         "section": "Keep my email addresses private"
+        },
+        {
+         "type": "checkbox",
+         "label": "Block command line pushes that expose my email",
+         "description": "When you push to GitHub, we'll check the most recent commit. If the author email on that commit is a private email on your GitHub account, we will block the push and warn you about exposing your private email.",
+         "value": true,
+         "id": "u-emails-block-command-line-pushes-that-expose-my",
+         "section": "Keep my email addresses private"
+        }
+       ]
+      },
+      {
+       "title": "Email preferences",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "radio",
+         "label": "Email preferences",
+         "description": "We'll occasionally contact you with the latest news and happenings from the GitHub Universe.",
+         "options": [
+          "Receive all emails, except those I unsubscribe from.",
+          "Only receive account related emails, and those I subscribe to."
+         ],
+         "value": "Receive all emails, except those I unsubscribe from.",
+         "id": "u-emails-email-preferences",
+         "section": "Email preferences"
+        },
+        {
+         "type": "link",
+         "label": "Manage subscriptions",
+         "description": "Unsubscribe from GitHub marketing and research emails.",
+         "id": "u-emails-manage-subscriptions",
+         "section": "Email preferences"
+        }
+       ]
+      }
+     ],
+     "about": "Your email addresses, primary and backup email, email privacy (hiding your address in commits and pushes), and marketing email preferences."
+    },
+    {
+     "id": "u-security",
+     "title": "Password and authentication",
+     "path": "/settings/security",
+     "icon": "shield-lock",
+     "sections": [
+      {
+       "title": "Change password",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "text",
+         "label": "Old password",
+         "description": "",
+         "value": "",
+         "placeholder": "",
+         "id": "u-security-old-password",
+         "section": "Change password"
+        },
+        {
+         "type": "text",
+         "label": "New password",
+         "description": "Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter.",
+         "value": "",
+         "placeholder": "",
+         "id": "u-security-new-password",
+         "section": "Change password"
+        },
+        {
+         "type": "text",
+         "label": "Confirm new password",
+         "description": "",
+         "value": "",
+         "placeholder": "",
+         "id": "u-security-confirm-new-password",
+         "section": "Change password"
+        },
+        {
+         "type": "button",
+         "label": "Update password",
+         "description": "",
+         "id": "u-security-update-password",
+         "section": "Change password"
+        },
+        {
+         "type": "link",
+         "label": "I forgot my password",
+         "description": "",
+         "id": "u-security-i-forgot-my-password",
+         "section": "Change password"
+        }
+       ]
+      },
+      {
+       "title": "Passkeys",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "Passwordless sign-in with passkeys",
+         "description": "Passkeys are webauthn credentials that validate your identity using touch, facial recognition, a device password, or a PIN. They can be used as a password replacement or as a 2FA method.",
+         "id": "u-security-passwordless-sign-in-with-passkeys",
+         "section": "Passkeys"
+        },
+        {
+         "type": "list",
+         "label": "Your passkeys",
+         "description": "",
+         "items": [
+          "MacBook Pro Touch ID \u00b7 Registered Aug 2, 2026"
+         ],
+         "id": "u-security-your-passkeys",
+         "section": "Passkeys"
+        },
+        {
+         "type": "button",
+         "label": "Add a passkey",
+         "description": "",
+         "id": "u-security-add-a-passkey",
+         "section": "Passkeys"
+        }
+       ]
+      },
+      {
+       "title": "Two-factor authentication",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "Two-factor authentication is enabled",
+         "description": "Two-factor authentication adds an additional layer of security to your account by requiring more than just a password to sign in.",
+         "id": "u-security-two-factor-authentication-is-enabled",
+         "section": "Two-factor authentication"
+        },
+        {
+         "type": "list",
+         "label": "Preferred 2FA method",
+         "description": "",
+         "items": [
+          "Authenticator app",
+          "Security keys",
+          "GitHub Mobile",
+          "SMS/Text message"
+         ],
+         "id": "u-security-preferred-2fa-method",
+         "section": "Two-factor authentication"
+        },
+        {
+         "type": "list",
+         "label": "Two-factor methods",
+         "description": "",
+         "items": [
+          "Authenticator app \u00b7 Configured",
+          "SMS/Text message \u00b7 Not configured",
+          "Security keys \u00b7 1 key",
+          "GitHub Mobile \u00b7 1 device"
+         ],
+         "id": "u-security-two-factor-methods",
+         "section": "Two-factor authentication"
+        },
+        {
+         "type": "button",
+         "label": "Edit authenticator app",
+         "description": "",
+         "id": "u-security-edit-authenticator-app",
+         "section": "Two-factor authentication"
+        },
+        {
+         "type": "button",
+         "label": "Register new security key",
+         "description": "",
+         "id": "u-security-register-new-security-key",
+         "section": "Two-factor authentication"
+        },
+        {
+         "type": "list",
+         "label": "Recovery options",
+         "description": "Recovery codes can be used to access your account in the event you lose access to your device and cannot receive two-factor authentication codes.",
+         "items": [
+          "Recovery codes \u00b7 Viewed",
+          "Recovery options: GitHub Mobile"
+         ],
+         "id": "u-security-recovery-options",
+         "section": "Two-factor authentication"
+        },
+        {
+         "type": "button",
+         "label": "View recovery codes",
+         "description": "",
+         "id": "u-security-view-recovery-codes",
+         "section": "Two-factor authentication"
+        },
+        {
+         "type": "danger-button",
+         "label": "Disable two-factor authentication",
+         "description": "",
+         "id": "u-security-disable-two-factor-authentication",
+         "section": "Two-factor authentication"
+        }
+       ]
+      },
+      {
+       "title": "Sessions",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "link",
+         "label": "Web sessions",
+         "description": "This is a list of devices that have logged into your account.",
+         "id": "u-security-web-sessions",
+         "section": "Sessions"
+        }
+       ]
+      },
+      {
+       "title": "SSH keys",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "link",
+         "label": "SSH keys",
+         "description": "Manage SSH keys used to authenticate git over SSH.",
+         "id": "u-security-ssh-keys",
+         "section": "SSH keys"
+        }
+       ]
+      }
+     ],
+     "about": "Signing in: password, passkeys, two-factor authentication methods, security keys, and recovery codes."
+    },
+    {
+     "id": "u-sessions",
+     "title": "Sessions",
+     "path": "/settings/sessions",
+     "icon": "broadcast",
+     "sections": [
+      {
+       "title": "Web sessions",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Web sessions",
+         "description": "This is a list of devices that have logged into your account. Revoke any sessions that you do not recognize.",
+         "items": [
+          "Denver, CO \u00b7 Safari on macOS \u00b7 Your current session",
+          "Chicago, IL \u00b7 Chrome on Windows \u00b7 Last accessed 3 days ago"
+         ],
+         "id": "u-sessions-web-sessions",
+         "section": "Web sessions"
+        },
+        {
+         "type": "danger-button",
+         "label": "Revoke session",
+         "description": "Sign a device out of your account.",
+         "id": "u-sessions-revoke-session",
+         "section": "Web sessions"
+        }
+       ]
+      },
+      {
+       "title": "GitHub Mobile sessions",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "GitHub Mobile sessions",
+         "description": "This is a list of devices that have logged into your account via the GitHub Mobile app.",
+         "items": [
+          "iPhone \u00b7 GitHub Mobile \u00b7 Authentication requests enabled"
+         ],
+         "id": "u-sessions-github-mobile-sessions",
+         "section": "GitHub Mobile sessions"
+        },
+        {
+         "type": "danger-button",
+         "label": "Revoke",
+         "description": "Sign the mobile app out.",
+         "id": "u-sessions-revoke",
+         "section": "GitHub Mobile sessions"
+        }
+       ]
+      }
+     ],
+     "about": "Devices and browsers currently signed in to your account, and signing them out remotely."
+    },
+    {
+     "id": "u-keys",
+     "title": "SSH and GPG keys",
+     "path": "/settings/keys",
+     "icon": "key",
+     "sections": [
+      {
+       "title": "SSH keys",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "SSH keys",
+         "description": "This is a list of SSH keys associated with your account. Remove any keys that you do not recognize.",
+         "items": [
+          "laptop \u00b7 SHA256:9x7\u2026Qe \u00b7 Added on Jan 3, 2025 \u00b7 Last used within the last week \u00b7 Read/write"
+         ],
+         "id": "u-keys-ssh-keys",
+         "section": "SSH keys"
+        },
+        {
+         "type": "button",
+         "label": "New SSH key",
+         "description": "Add an authentication or signing key.",
+         "id": "u-keys-new-ssh-key",
+         "section": "SSH keys"
+        },
+        {
+         "type": "select",
+         "label": "Key type",
+         "description": "",
+         "options": [
+          "Authentication Key",
+          "Signing Key"
+         ],
+         "value": "Authentication Key",
+         "id": "u-keys-key-type",
+         "section": "SSH keys"
+        },
+        {
+         "type": "link",
+         "label": "Check out our guide to connecting to GitHub using SSH keys or troubleshoot common SSH problems.",
+         "description": "",
+         "id": "u-keys-check-out-our-guide-to-connecting-to-git",
+         "section": "SSH keys"
+        }
+       ]
+      },
+      {
+       "title": "GPG keys",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "GPG keys",
+         "description": "This is a list of GPG keys associated with your account. Remove any keys that you do not recognize.",
+         "items": [
+          "Key ID: 3AA5C34371567BD2 \u00b7 Email: octo@example.invalid \u00b7 Expires: never"
+         ],
+         "id": "u-keys-gpg-keys",
+         "section": "GPG keys"
+        },
+        {
+         "type": "button",
+         "label": "New GPG key",
+         "description": "",
+         "id": "u-keys-new-gpg-key",
+         "section": "GPG keys"
+        }
+       ]
+      },
+      {
+       "title": "Vigilant mode",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Flag unsigned commits as unverified",
+         "description": "This will include any commit attributed to your account but not signed with your GPG or S/MIME key. Note that this will include your existing unsigned commits.",
+         "value": false,
+         "id": "u-keys-flag-unsigned-commits-as-unverified",
+         "section": "Vigilant mode"
+        }
+       ]
+      }
+     ],
+     "about": "SSH keys for git access, GPG keys for signing commits, and vigilant mode for showing unsigned commits as unverified."
+    },
+    {
+     "id": "u-organizations",
+     "title": "Organizations",
+     "path": "/settings/organizations",
+     "icon": "organization",
+     "sections": [
+      {
+       "title": "Organizations",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Organizations",
+         "description": "You are a member of these organizations.",
+         "items": [
+          "octo-sample-org \u00b7 Owner",
+          "open-widgets \u00b7 Member"
+         ],
+         "id": "u-organizations-organizations",
+         "section": "Organizations"
+        },
+        {
+         "type": "button",
+         "label": "Leave",
+         "description": "Leave an organization you are a member of.",
+         "id": "u-organizations-leave",
+         "section": "Organizations"
+        },
+        {
+         "type": "button",
+         "label": "New organization",
+         "description": "",
+         "id": "u-organizations-new-organization",
+         "section": "Organizations"
+        }
+       ]
+      },
+      {
+       "title": "Transform account",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "Transform account into an organization",
+         "description": "You cannot transform this account into an organization until you leave all organizations that you're a member of.",
+         "id": "u-organizations-transform-account-into-an-organization",
+         "section": "Transform account"
+        },
+        {
+         "type": "button",
+         "label": "Turn octo-sample into an organization",
+         "description": "",
+         "id": "u-organizations-turn-octo-sample-into-an-organization",
+         "section": "Transform account"
+        }
+       ]
+      }
+     ],
+     "about": "Organizations you belong to: leave one, create one, or turn your account into an organization."
+    },
+    {
+     "id": "u-enterprises",
+     "title": "Enterprises",
+     "path": "/settings/enterprises",
+     "icon": "globe",
+     "sections": [
+      {
+       "title": "Enterprises",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "You are not a member of any enterprises",
+         "description": "Enterprise accounts centrally manage policy and billing for multiple organizations.",
+         "id": "u-enterprises-you-are-not-a-member-of-any-enterprises",
+         "section": "Enterprises"
+        },
+        {
+         "type": "button",
+         "label": "Start a free enterprise trial",
+         "description": "",
+         "id": "u-enterprises-start-a-free-enterprise-trial",
+         "section": "Enterprises"
+        }
+       ]
+      }
+     ],
+     "about": "Enterprise accounts you belong to."
+    },
+    {
+     "id": "u-moderation",
+     "title": "Moderation",
+     "path": "/settings/blocked_users",
+     "icon": "report",
+     "sections": [
+      {
+       "title": "Blocked users",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "Blocking a user prevents the following on all your repositories: opening or commenting on issues or pull requests, starring, forking, or watching, adding or editing wiki pages.",
+         "description": "",
+         "id": "u-moderation-blocking-a-user-prevents-the-following-o",
+         "section": "Blocked users"
+        },
+        {
+         "type": "text",
+         "label": "Block a user",
+         "description": "",
+         "value": "",
+         "placeholder": "Search by username, full name or email address",
+         "id": "u-moderation-block-a-user",
+         "section": "Blocked users"
+        },
+        {
+         "type": "button",
+         "label": "Block user",
+         "description": "",
+         "id": "u-moderation-block-user",
+         "section": "Blocked users"
+        },
+        {
+         "type": "list",
+         "label": "Blocked users",
+         "description": "",
+         "items": [
+          "spam-account-123 \u00b7 Blocked Mar 4, 2026"
+         ],
+         "id": "u-moderation-blocked-users",
+         "section": "Blocked users"
+        },
+        {
+         "type": "checkbox",
+         "label": "Warn me when a blocked user is a prior contributor to a repository",
+         "description": "On repositories you haven't contributed to yet, we'll warn you and let you decide whether to proceed.",
+         "value": true,
+         "id": "u-moderation-warn-me-when-a-blocked-user-is-a-prior-c",
+         "section": "Blocked users"
+        }
+       ]
+      },
+      {
+       "title": "Interaction limits",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "Temporary interaction limits for your public repositories",
+         "description": "Temporarily restrict which external users can interact with your repositories (comment, open issues, or create pull requests) for a configurable period of time.",
+         "id": "u-moderation-temporary-interaction-limits-for-your-pu",
+         "section": "Interaction limits"
+        },
+        {
+         "type": "radio",
+         "label": "Limit to existing users",
+         "description": "Users that have recently created their account will be unable to interact with your repositories.",
+         "options": [
+          "Disabled",
+          "Enabled"
+         ],
+         "value": "Disabled",
+         "id": "u-moderation-limit-to-existing-users",
+         "section": "Interaction limits"
+        },
+        {
+         "type": "radio",
+         "label": "Limit to prior contributors",
+         "description": "Users that have not previously committed to the default branch of a repository will be unable to interact with that repository.",
+         "options": [
+          "Disabled",
+          "Enabled"
+         ],
+         "value": "Disabled",
+         "id": "u-moderation-limit-to-prior-contributors",
+         "section": "Interaction limits"
+        },
+        {
+         "type": "radio",
+         "label": "Limit to repository collaborators",
+         "description": "Users that are not collaborators of a repository will not be able to interact with that repository.",
+         "options": [
+          "Disabled",
+          "Enabled"
+         ],
+         "value": "Disabled",
+         "id": "u-moderation-limit-to-repository-collaborators",
+         "section": "Interaction limits"
+        },
+        {
+         "type": "select",
+         "label": "Enable interaction limits for",
+         "description": "",
+         "options": [
+          "24 hours",
+          "3 days",
+          "1 week",
+          "1 month",
+          "6 months"
+         ],
+         "value": "24 hours",
+         "id": "u-moderation-enable-interaction-limits-for",
+         "section": "Interaction limits"
+        }
+       ]
+      },
+      {
+       "title": "Code review limits",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Limit to users explicitly granted read or higher access",
+         "description": "When enabled, only users explicitly granted access to your repositories will be able to submit pull request reviews that \"approve\" or \"request changes\".",
+         "value": false,
+         "id": "u-moderation-limit-to-users-explicitly-granted-read-o",
+         "section": "Code review limits"
+        }
+       ]
+      }
+     ],
+     "about": "Blocking users and temporarily limiting who can comment, open issues, or open pull requests on your public repositories."
+    }
+   ]
+  },
+  {
+   "id": "u-g-code",
+   "title": "Code, planning, and automation",
+   "pages": [
+    {
+     "id": "u-repositories",
+     "title": "Repositories",
+     "path": "/settings/repositories",
+     "icon": "repo",
+     "sections": [
+      {
+       "title": "Repository default branch",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "text",
+         "label": "Default branch name",
+         "description": "Choose the default branch for your new personal repositories. You might want to change the default name due to different workflows, or because your integrations still require \"master\" as the default branch name.",
+         "value": "main",
+         "placeholder": "",
+         "id": "u-repositories-default-branch-name",
+         "section": "Repository default branch"
+        },
+        {
+         "type": "button",
+         "label": "Update",
+         "description": "",
+         "id": "u-repositories-update",
+         "section": "Repository default branch"
+        }
+       ]
+      },
+      {
+       "title": "Deleted repositories",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Deleted repositories",
+         "description": "It may take up to an hour for repositories to be displayed here. You can only restore repositories that are not forks, or have not been forked.",
+         "items": [
+          "octo-sample/old-experiment \u00b7 Deleted 12 days ago"
+         ],
+         "id": "u-repositories-deleted-repositories",
+         "section": "Deleted repositories"
+        },
+        {
+         "type": "button",
+         "label": "Restore",
+         "description": "Restore a repository deleted in the last 90 days.",
+         "id": "u-repositories-restore",
+         "section": "Deleted repositories"
+        }
+       ]
+      }
+     ],
+     "about": "Default branch name for your new repositories, and restoring repositories you deleted."
+    },
+    {
+     "id": "u-codespaces",
+     "title": "Codespaces",
+     "path": "/settings/codespaces",
+     "icon": "codespaces",
+     "sections": [
+      {
+       "title": "Dotfiles",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Automatically install dotfiles",
+         "description": "Codespaces can automatically install your dotfiles into every codespace you create.",
+         "value": false,
+         "id": "u-codespaces-automatically-install-dotfiles",
+         "section": "Dotfiles"
+        },
+        {
+         "type": "select",
+         "label": "Dotfiles repository",
+         "description": "",
+         "options": [
+          "octo-sample/dotfiles"
+         ],
+         "value": "octo-sample/dotfiles",
+         "id": "u-codespaces-dotfiles-repository",
+         "section": "Dotfiles"
+        }
+       ]
+      },
+      {
+       "title": "Codespaces secrets",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Codespaces secrets",
+         "description": "Development environment secrets are environment variables that are encrypted. They are available to any codespace you create using repositories with access to that secret.",
+         "items": [
+          "NPM_TOKEN \u00b7 Updated 2 months ago \u00b7 3 repositories"
+         ],
+         "id": "u-codespaces-codespaces-secrets",
+         "section": "Codespaces secrets"
+        },
+        {
+         "type": "button",
+         "label": "New secret",
+         "description": "",
+         "id": "u-codespaces-new-secret",
+         "section": "Codespaces secrets"
+        }
+       ]
+      },
+      {
+       "title": "GPG verification",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "radio",
+         "label": "GPG verification",
+         "description": "Codespaces created with GPG verification will have GPG capabilities and sign your commits so they are verified.",
+         "options": [
+          "Disabled",
+          "All repositories",
+          "Selected repositories"
+         ],
+         "value": "Disabled",
+         "id": "u-codespaces-gpg-verification",
+         "section": "GPG verification"
+        }
+       ]
+      },
+      {
+       "title": "Settings Sync",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "radio",
+         "label": "Settings Sync",
+         "description": "Enable Settings Sync for codespaces opened in VS Code.",
+         "options": [
+          "Disabled",
+          "All repositories",
+          "Selected repositories"
+         ],
+         "value": "Disabled",
+         "id": "u-codespaces-settings-sync",
+         "section": "Settings Sync"
+        }
+       ]
+      },
+      {
+       "title": "Trusted repositories",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "radio",
+         "label": "Trusted repositories",
+         "description": "Allow codespaces to access other repositories you own when created from these.",
+         "options": [
+          "Disabled",
+          "All repositories",
+          "Selected repositories"
+         ],
+         "value": "Disabled",
+         "id": "u-codespaces-trusted-repositories",
+         "section": "Trusted repositories"
+        }
+       ]
+      },
+      {
+       "title": "Access and security",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "radio",
+         "label": "Access and security",
+         "description": "Codespaces created for a repository can only access that repository. You can allow a codespace for a repository to access other repositories you own.",
+         "options": [
+          "Disabled",
+          "All repositories",
+          "Selected repositories"
+         ],
+         "value": "Disabled",
+         "id": "u-codespaces-access-and-security",
+         "section": "Access and security"
+        }
+       ]
+      },
+      {
+       "title": "Editor preference",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "radio",
+         "label": "Editor preference",
+         "description": "Choose the default editor for your codespaces.",
+         "options": [
+          "Visual Studio Code",
+          "Visual Studio Code for the Web",
+          "JetBrains Gateway",
+          "JupyterLab"
+         ],
+         "value": "Visual Studio Code",
+         "id": "u-codespaces-editor-preference",
+         "section": "Editor preference"
+        }
+       ]
+      },
+      {
+       "title": "Default idle timeout",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "text",
+         "label": "Default idle timeout",
+         "description": "A codespace will suspend after a period of inactivity. You can specify a default idle timeout value, which will apply to all codespaces created after the default is changed.",
+         "value": "30 minutes",
+         "placeholder": "",
+         "id": "u-codespaces-default-idle-timeout",
+         "section": "Default idle timeout"
+        }
+       ]
+      },
+      {
+       "title": "Default retention period",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "text",
+         "label": "Default retention period",
+         "description": "Inactive codespaces are automatically deleted 30 days after they have been stopped. You can specify a shorter retention period.",
+         "value": "30 days",
+         "placeholder": "",
+         "id": "u-codespaces-default-retention-period",
+         "section": "Default retention period"
+        }
+       ]
+      },
+      {
+       "title": "Host image version preference",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "radio",
+         "label": "Host image version preference",
+         "description": "The host image defines the operating system and base software a codespace runs on.",
+         "options": [
+          "Stable",
+          "Beta"
+         ],
+         "value": "Stable",
+         "id": "u-codespaces-host-image-version-preference",
+         "section": "Host image version preference"
+        }
+       ]
+      },
+      {
+       "title": "Region",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "radio",
+         "label": "Region",
+         "description": "Your default region will be used to designate compute resources to your codespaces.",
+         "options": [
+          "Set automatically",
+          "Set manually"
+         ],
+         "value": "Set automatically",
+         "id": "u-codespaces-region",
+         "section": "Region"
+        }
+       ]
+      }
+     ],
+     "about": "Your cloud development environments: dotfiles, secrets, editor, idle timeout, retention, region."
+    },
+    {
+     "id": "u-models",
+     "title": "Models",
+     "path": "/settings/models",
+     "icon": "ai-model",
+     "sections": [
+      {
+       "title": "GitHub Models",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "toggle",
+         "label": "Enable GitHub Models",
+         "description": "Use GitHub Models to find and experiment with AI models in the playground and via the API.",
+         "value": true,
+         "id": "u-models-enable-github-models",
+         "section": "GitHub Models"
+        },
+        {
+         "type": "info",
+         "label": "Usage",
+         "description": "Free rate-limited usage is included. Opt into paid usage to go beyond the free limits.",
+         "id": "u-models-usage",
+         "section": "GitHub Models"
+        },
+        {
+         "type": "checkbox",
+         "label": "Opt in to paid usage",
+         "description": "Bill model inference beyond free rate limits to your account.",
+         "value": false,
+         "id": "u-models-opt-in-to-paid-usage",
+         "section": "GitHub Models"
+        }
+       ]
+      }
+     ],
+     "about": "GitHub Models, the AI model playground and API, and paid usage."
+    },
+    {
+     "id": "u-packages",
+     "title": "Packages",
+     "path": "/settings/packages",
+     "icon": "package",
+     "sections": [
+      {
+       "title": "Deleted packages",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Deleted packages",
+         "description": "These are packages that have been deleted from your account. You can restore a package deleted within the last 30 days.",
+         "items": [
+          "ghcr.io/octo-sample/api \u00b7 Deleted 4 days ago"
+         ],
+         "id": "u-packages-deleted-packages",
+         "section": "Deleted packages"
+        },
+        {
+         "type": "button",
+         "label": "Restore",
+         "description": "",
+         "id": "u-packages-restore",
+         "section": "Deleted packages"
+        }
+       ]
+      },
+      {
+       "title": "Package creation",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "checkbox",
+         "label": "Public",
+         "description": "Members will be able to create public packages, visible to anyone.",
+         "value": true,
+         "id": "u-packages-public",
+         "section": "Package creation"
+        },
+        {
+         "type": "checkbox",
+         "label": "Private",
+         "description": "Members will be able to create private packages, visible to account members with permission.",
+         "value": true,
+         "id": "u-packages-private",
+         "section": "Package creation"
+        }
+       ]
+      }
+     ],
+     "about": "Packages you own: restoring deleted packages and package visibility."
+    },
+    {
+     "id": "u-copilot",
+     "title": "Copilot",
+     "path": "/settings/copilot",
+     "icon": "copilot",
+     "sections": [
+      {
+       "title": "Copilot",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "GitHub Copilot Pro is active for your account",
+         "description": "",
+         "id": "u-copilot-github-copilot-pro-is-active-for-your-ac",
+         "section": "Copilot"
+        },
+        {
+         "type": "button",
+         "label": "Manage subscription",
+         "description": "",
+         "id": "u-copilot-manage-subscription",
+         "section": "Copilot"
+        }
+       ]
+      },
+      {
+       "title": "Features",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "select",
+         "label": "Suggestions matching public code (duplication detection filter)",
+         "description": "Copilot can allow or block suggestions matching public code.",
+         "options": [
+          "Allowed",
+          "Blocked"
+         ],
+         "value": "Allowed",
+         "id": "u-copilot-suggestions-matching-public-code-duplica",
+         "section": "Features"
+        },
+        {
+         "type": "select",
+         "label": "Copilot in github.com",
+         "description": "You can use Copilot Chat in GitHub.com, Copilot for pull requests and more.",
+         "options": [
+          "Enabled",
+          "Disabled"
+         ],
+         "value": "Enabled",
+         "id": "u-copilot-copilot-in-github-com",
+         "section": "Features"
+        },
+        {
+         "type": "select",
+         "label": "Copilot in the IDE",
+         "description": "",
+         "options": [
+          "Enabled",
+          "Disabled"
+         ],
+         "value": "Enabled",
+         "id": "u-copilot-copilot-in-the-ide",
+         "section": "Features"
+        },
+        {
+         "type": "select",
+         "label": "Copilot Chat in the IDE",
+         "description": "",
+         "options": [
+          "Enabled",
+          "Disabled"
+         ],
+         "value": "Enabled",
+         "id": "u-copilot-copilot-chat-in-the-ide",
+         "section": "Features"
+        },
+        {
+         "type": "select",
+         "label": "Copilot in GitHub Mobile",
+         "description": "",
+         "options": [
+          "Enabled",
+          "Disabled"
+         ],
+         "value": "Enabled",
+         "id": "u-copilot-copilot-in-github-mobile",
+         "section": "Features"
+        },
+        {
+         "type": "select",
+         "label": "Copilot in the CLI",
+         "description": "",
+         "options": [
+          "Enabled",
+          "Disabled"
+         ],
+         "value": "Enabled",
+         "id": "u-copilot-copilot-in-the-cli",
+         "section": "Features"
+        },
+        {
+         "type": "select",
+         "label": "Copilot code review",
+         "description": "Ask Copilot to review your pull requests.",
+         "options": [
+          "Enabled",
+          "Disabled"
+         ],
+         "value": "Enabled",
+         "id": "u-copilot-copilot-code-review",
+         "section": "Features"
+        },
+        {
+         "type": "select",
+         "label": "Automatic Copilot code review",
+         "description": "Copilot automatically reviews every pull request you open.",
+         "options": [
+          "Disabled",
+          "Enabled"
+         ],
+         "value": "Disabled",
+         "id": "u-copilot-automatic-copilot-code-review",
+         "section": "Features"
+        },
+        {
+         "type": "select",
+         "label": "Copilot coding agent",
+         "description": "Delegate tasks to Copilot and have it open pull requests.",
+         "options": [
+          "Enabled",
+          "Disabled"
+         ],
+         "value": "Enabled",
+         "id": "u-copilot-copilot-coding-agent",
+         "section": "Features"
+        },
+        {
+         "type": "select",
+         "label": "MCP servers in Copilot",
+         "description": "",
+         "options": [
+          "Enabled",
+          "Disabled"
+         ],
+         "value": "Enabled",
+         "id": "u-copilot-mcp-servers-in-copilot",
+         "section": "Features"
+        },
+        {
+         "type": "select",
+         "label": "Copilot Spaces",
+         "description": "",
+         "options": [
+          "Enabled",
+          "Disabled"
+         ],
+         "value": "Enabled",
+         "id": "u-copilot-copilot-spaces",
+         "section": "Features"
+        },
+        {
+         "type": "select",
+         "label": "Dashboard entry point",
+         "description": "Show Copilot chat on your GitHub dashboard.",
+         "options": [
+          "Enabled",
+          "Disabled"
+         ],
+         "value": "Enabled",
+         "id": "u-copilot-dashboard-entry-point",
+         "section": "Features"
+        }
+       ]
+      },
+      {
+       "title": "Models",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "select",
+         "label": "Anthropic Claude in Copilot",
+         "description": "",
+         "options": [
+          "Enabled",
+          "Disabled"
+         ],
+         "value": "Enabled",
+         "id": "u-copilot-anthropic-claude-in-copilot",
+         "section": "Models"
+        },
+        {
+         "type": "select",
+         "label": "Google Gemini in Copilot",
+         "description": "",
+         "options": [
+          "Enabled",
+          "Disabled"
+         ],
+         "value": "Enabled",
+         "id": "u-copilot-google-gemini-in-copilot",
+         "section": "Models"
+        },
+        {
+         "type": "select",
+         "label": "OpenAI models in Copilot",
+         "description": "",
+         "options": [
+          "Enabled",
+          "Disabled"
+         ],
+         "value": "Enabled",
+         "id": "u-copilot-openai-models-in-copilot",
+         "section": "Models"
+        }
+       ]
+      },
+      {
+       "title": "Privacy",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "select",
+         "label": "Allow GitHub to use my data for product improvements",
+         "description": "Allow GitHub, its affiliates and third parties to use my data, including Prompts, Suggestions, and Code Snippets, for product improvements.",
+         "options": [
+          "Enabled",
+          "Disabled"
+         ],
+         "value": "Enabled",
+         "id": "u-copilot-allow-github-to-use-my-data-for-product-",
+         "section": "Privacy"
+        },
+        {
+         "type": "select",
+         "label": "Allow GitHub to use my data for AI model training",
+         "description": "",
+         "options": [
+          "Disabled",
+          "Enabled"
+         ],
+         "value": "Disabled",
+         "id": "u-copilot-allow-github-to-use-my-data-for-ai-model",
+         "section": "Privacy"
+        }
+       ]
+      }
+     ],
+     "about": "Your GitHub Copilot subscription and features: where Copilot runs, suggestions that match public code, available AI models, and data use."
+    },
+    {
+     "id": "u-pages",
+     "title": "Pages",
+     "path": "/settings/pages",
+     "icon": "browser",
+     "sections": [
+      {
+       "title": "Verified domains",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Verified domains",
+         "description": "Verify domains to restrict who can publish GitHub Pages sites to them. Verifying a domain prevents takeover attacks.",
+         "items": [
+          "octo.example.invalid \u00b7 Verified"
+         ],
+         "id": "u-pages-verified-domains",
+         "section": "Verified domains"
+        },
+        {
+         "type": "button",
+         "label": "Add a domain",
+         "description": "",
+         "id": "u-pages-add-a-domain",
+         "section": "Verified domains"
+        }
+       ]
+      }
+     ],
+     "about": "Verified domains for your GitHub Pages sites."
+    },
+    {
+     "id": "u-replies",
+     "title": "Saved replies",
+     "path": "/settings/replies",
+     "icon": "reply",
+     "sections": [
+      {
+       "title": "Saved replies",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Saved replies",
+         "description": "Saved replies are re-usable text snippets that you can use throughout GitHub comment fields. Saved replies can save you time if you're often typing similar responses.",
+         "items": [
+          "Duplicate issue \u00b7 Thanks! Closing as a duplicate of #\u2026",
+          "Needs repro \u00b7 Could you share a minimal reproduction?"
+         ],
+         "id": "u-replies-saved-replies",
+         "section": "Saved replies"
+        },
+        {
+         "type": "text",
+         "label": "Saved reply title",
+         "description": "",
+         "value": "",
+         "placeholder": "",
+         "id": "u-replies-saved-reply-title",
+         "section": "Saved replies"
+        },
+        {
+         "type": "textarea",
+         "label": "Add a saved reply",
+         "description": "",
+         "value": "",
+         "placeholder": "",
+         "id": "u-replies-add-a-saved-reply",
+         "section": "Saved replies"
+        },
+        {
+         "type": "button",
+         "label": "Add saved reply",
+         "description": "",
+         "id": "u-replies-add-saved-reply",
+         "section": "Saved replies"
+        }
+       ]
+      }
+     ],
+     "about": "Saved replies: reusable canned text for comments."
+    }
+   ]
+  },
+  {
+   "id": "u-g-security",
+   "title": "Security",
+   "pages": [
+    {
+     "id": "u-code-security",
+     "title": "Code security",
+     "path": "/settings/security_analysis",
+     "icon": "shield-check",
+     "sections": [
+      {
+       "title": "User",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "select",
+         "label": "Push protection for yourself",
+         "description": "Block commits that contain supported secrets across all public repositories on GitHub.",
+         "options": [
+          "Enabled",
+          "Disabled"
+         ],
+         "value": "Enabled",
+         "id": "u-code-security-push-protection-for-yourself",
+         "section": "User"
+        }
+       ]
+      },
+      {
+       "title": "Dependency graph",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "button",
+         "label": "Disable all",
+         "description": "Understand your dependencies.",
+         "id": "u-code-security-disable-all",
+         "section": "Dependency graph"
+        },
+        {
+         "type": "button",
+         "label": "Enable all",
+         "description": "",
+         "id": "u-code-security-enable-all",
+         "section": "Dependency graph"
+        },
+        {
+         "type": "checkbox",
+         "label": "Automatically enable for new private repositories",
+         "description": "",
+         "value": false,
+         "id": "u-code-security-automatically-enable-for-new-private-rep",
+         "section": "Dependency graph"
+        }
+       ]
+      },
+      {
+       "title": "Dependabot",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "Keep your dependencies secure and up-to-date.",
+         "description": "",
+         "id": "u-code-security-keep-your-dependencies-secure-and-up-to-",
+         "section": "Dependabot"
+        },
+        {
+         "type": "select",
+         "label": "Dependabot alerts",
+         "description": "Receive alerts for vulnerabilities that affect your dependencies and manually generate Dependabot pull requests to resolve these vulnerabilities.",
+         "options": [
+          "Enable all",
+          "Disable all"
+         ],
+         "value": "Enable all",
+         "id": "u-code-security-dependabot-alerts",
+         "section": "Dependabot"
+        },
+        {
+         "type": "checkbox",
+         "label": "Automatically enable for new repositories",
+         "description": "",
+         "value": true,
+         "id": "u-code-security-automatically-enable-for-new-repositorie",
+         "section": "Dependabot"
+        },
+        {
+         "type": "select",
+         "label": "Dependabot security updates",
+         "description": "Enabling this option will result in Dependabot automatically attempting to open pull requests to resolve every open Dependabot alert with an available patch.",
+         "options": [
+          "Enable all",
+          "Disable all"
+         ],
+         "value": "Enable all",
+         "id": "u-code-security-dependabot-security-updates",
+         "section": "Dependabot"
+        },
+        {
+         "type": "checkbox",
+         "label": "Automatically enable for new repositories ",
+         "description": "",
+         "value": false,
+         "id": "u-code-security-automatically-enable-for-new-repositorie-2",
+         "section": "Dependabot"
+        },
+        {
+         "type": "select",
+         "label": "Grouped security updates",
+         "description": "Groups all available updates that resolve a Dependabot alert into one pull request (per package manager and directory of requirement manifests).",
+         "options": [
+          "Enable all",
+          "Disable all"
+         ],
+         "value": "Enable all",
+         "id": "u-code-security-grouped-security-updates",
+         "section": "Dependabot"
+        },
+        {
+         "type": "select",
+         "label": "Dependabot on Actions runners",
+         "description": "Run Dependabot security and version updates on Actions runners.",
+         "options": [
+          "Enable all",
+          "Disable all"
+         ],
+         "value": "Enable all",
+         "id": "u-code-security-dependabot-on-actions-runners",
+         "section": "Dependabot"
+        }
+       ]
+      },
+      {
+       "title": "Private vulnerability reporting",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "select",
+         "label": "Private vulnerability reporting",
+         "description": "Allow your community to privately report potential security vulnerabilities to maintainers and repository owners.",
+         "options": [
+          "Enable all",
+          "Disable all"
+         ],
+         "value": "Enable all",
+         "id": "u-code-security-private-vulnerability-reporting",
+         "section": "Private vulnerability reporting"
+        }
+       ]
+      }
+     ],
+     "about": "Security features across your own repositories: secret push protection, dependency graph, Dependabot alerts and updates."
+    }
+   ]
+  },
+  {
+   "id": "u-g-integrations",
+   "title": "Integrations",
+   "pages": [
+    {
+     "id": "u-applications",
+     "title": "Applications",
+     "path": "/settings/installations",
+     "icon": "apps",
+     "sections": [
+      {
+       "title": "Installed GitHub Apps",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Installed GitHub Apps",
+         "description": "GitHub Apps augment and extend your workflows on GitHub with commercially supported tools, and they act with the permissions and repository access you grant them.",
+         "items": [
+          "Netlify \u00b7 Configure",
+          "Codecov \u00b7 Configure"
+         ],
+         "id": "u-applications-installed-github-apps",
+         "section": "Installed GitHub Apps"
+        },
+        {
+         "type": "button",
+         "label": "Configure",
+         "description": "",
+         "id": "u-applications-configure",
+         "section": "Installed GitHub Apps"
+        },
+        {
+         "type": "danger-button",
+         "label": "Uninstall",
+         "description": "Remove an installed GitHub App from your account.",
+         "id": "u-applications-uninstall",
+         "section": "Installed GitHub Apps"
+        }
+       ]
+      },
+      {
+       "title": "Authorized GitHub Apps",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Authorized GitHub Apps",
+         "description": "You have granted these GitHub Apps permission to act on your behalf.",
+         "items": [
+          "GitHub CLI \u00b7 Last used within the last week",
+          "Visual Studio Code \u00b7 Last used today"
+         ],
+         "id": "u-applications-authorized-github-apps",
+         "section": "Authorized GitHub Apps"
+        },
+        {
+         "type": "danger-button",
+         "label": "Revoke",
+         "description": "Revoke the app's ability to act on your behalf.",
+         "id": "u-applications-revoke",
+         "section": "Authorized GitHub Apps"
+        }
+       ]
+      },
+      {
+       "title": "Authorized OAuth Apps",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Authorized OAuth Apps",
+         "description": "You have granted these applications access to your account.",
+         "items": [
+          "Travis CI \u00b7 read:org, repo",
+          "Heroku Dashboard \u00b7 repo"
+         ],
+         "id": "u-applications-authorized-oauth-apps",
+         "section": "Authorized OAuth Apps"
+        },
+        {
+         "type": "danger-button",
+         "label": "Revoke all",
+         "description": "Revoke access for every OAuth App you've authorized.",
+         "id": "u-applications-revoke-all",
+         "section": "Authorized OAuth Apps"
+        }
+       ]
+      }
+     ],
+     "about": "Third-party apps you installed or authorized to act on your behalf, and revoking their access."
+    },
+    {
+     "id": "u-reminders",
+     "title": "Scheduled reminders",
+     "path": "/settings/reminders",
+     "icon": "clock",
+     "sections": [
+      {
+       "title": "Scheduled reminders",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "info",
+         "label": "Scheduled reminders",
+         "description": "Configure real-time alerts and scheduled reminders in Slack for pull requests that need your review.",
+         "id": "u-reminders-scheduled-reminders",
+         "section": "Scheduled reminders"
+        },
+        {
+         "type": "select",
+         "label": "Organization",
+         "description": "",
+         "options": [
+          "octo-sample-org",
+          "open-widgets"
+         ],
+         "value": "octo-sample-org",
+         "id": "u-reminders-organization",
+         "section": "Scheduled reminders"
+        },
+        {
+         "type": "button",
+         "label": "Configure",
+         "description": "",
+         "id": "u-reminders-configure",
+         "section": "Scheduled reminders"
+        }
+       ]
+      }
+     ],
+     "about": "Slack reminders about pull requests waiting for your review."
+    }
+   ]
+  },
+  {
+   "id": "u-g-archives",
+   "title": "Archives",
+   "pages": [
+    {
+     "id": "u-security-log",
+     "title": "Security log",
+     "path": "/settings/security-log",
+     "icon": "log",
+     "sections": [
+      {
+       "title": "Security log",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "text",
+         "label": "Filter",
+         "description": "Search your security log by action, e.g. action:repo.create, or by country.",
+         "value": "",
+         "placeholder": "Filter by action, actor, or country",
+         "id": "u-security-log-filter",
+         "section": "Security log"
+        },
+        {
+         "type": "list",
+         "label": "Recent events",
+         "description": "Your security log records the events that change your account's security.",
+         "items": [
+          "user.login \u00b7 from Denver, US \u00b7 2 hours ago",
+          "oauth_authorization.create \u00b7 GitHub CLI \u00b7 3 days ago",
+          "two_factor_authentication.recovery_codes_regenerated \u00b7 4 weeks ago"
+         ],
+         "id": "u-security-log-recent-events",
+         "section": "Security log"
+        },
+        {
+         "type": "button",
+         "label": "Export",
+         "description": "Export your security log as JSON or CSV.",
+         "id": "u-security-log-export",
+         "section": "Security log"
+        }
+       ]
+      }
+     ],
+     "about": "A history of security-relevant events on your account, such as sign-ins and token creation."
+    },
+    {
+     "id": "u-sponsors-log",
+     "title": "Sponsorship log",
+     "path": "/settings/sponsors-log",
+     "icon": "heart",
+     "sections": [
+      {
+       "title": "Sponsorship log",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Sponsorship log",
+         "description": "A record of your sponsorships, including new sponsorships, tier changes, and cancellations.",
+         "items": [
+          "Sponsored @maintainer-sample \u00b7 $5/month \u00b7 Jan 2026"
+         ],
+         "id": "u-sponsors-log-sponsorship-log",
+         "section": "Sponsorship log"
+        },
+        {
+         "type": "select",
+         "label": "Period",
+         "description": "",
+         "options": [
+          "Last 90 days",
+          "Last 12 months",
+          "All time"
+         ],
+         "value": "Last 90 days",
+         "id": "u-sponsors-log-period",
+         "section": "Sponsorship log"
+        }
+       ]
+      }
+     ],
+     "about": "A history of your GitHub Sponsors activity."
+    }
+   ]
+  },
+  {
+   "id": "u-g-developer",
+   "title": "",
+   "pages": [
+    {
+     "id": "u-developer",
+     "title": "Developer settings",
+     "path": "/settings/apps",
+     "icon": "code",
+     "sections": [
+      {
+       "title": "GitHub Apps",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "GitHub Apps",
+         "description": "Want to build something that integrates with and extends GitHub? Register a new GitHub App to get started developing on the GitHub API.",
+         "items": [
+          "octo-release-bot"
+         ],
+         "id": "u-developer-github-apps",
+         "section": "GitHub Apps"
+        },
+        {
+         "type": "button",
+         "label": "New GitHub App",
+         "description": "",
+         "id": "u-developer-new-github-app",
+         "section": "GitHub Apps"
+        }
+       ]
+      },
+      {
+       "title": "OAuth Apps",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "OAuth Apps",
+         "description": "OAuth Apps registered under your account.",
+         "items": [
+          "octo-sample local dev"
+         ],
+         "id": "u-developer-oauth-apps",
+         "section": "OAuth Apps"
+        },
+        {
+         "type": "button",
+         "label": "New OAuth App",
+         "description": "",
+         "id": "u-developer-new-oauth-app",
+         "section": "OAuth Apps"
+        }
+       ]
+      },
+      {
+       "title": "Personal access tokens (fine-grained)",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Fine-grained tokens",
+         "description": "Fine-grained personal access tokens can be scoped to specific repositories and permissions.",
+         "items": [
+          "deploy-script \u00b7 Expires Dec 1, 2026 \u00b7 1 repository"
+         ],
+         "id": "u-developer-fine-grained-tokens",
+         "section": "Personal access tokens (fine-grained)"
+        },
+        {
+         "type": "button",
+         "label": "Generate new token",
+         "description": "",
+         "id": "u-developer-generate-new-token",
+         "section": "Personal access tokens (fine-grained)"
+        },
+        {
+         "type": "select",
+         "label": "Expiration",
+         "description": "",
+         "options": [
+          "7 days",
+          "30 days",
+          "60 days",
+          "90 days",
+          "Custom",
+          "No expiration"
+         ],
+         "value": "30 days",
+         "id": "u-developer-expiration",
+         "section": "Personal access tokens (fine-grained)"
+        },
+        {
+         "type": "radio",
+         "label": "Repository access",
+         "description": "",
+         "options": [
+          "Public repositories",
+          "All repositories",
+          "Only select repositories"
+         ],
+         "value": "Public repositories",
+         "id": "u-developer-repository-access",
+         "section": "Personal access tokens (fine-grained)"
+        }
+       ]
+      },
+      {
+       "title": "Personal access tokens (classic)",
+       "description": "",
+       "danger": false,
+       "controls": [
+        {
+         "type": "list",
+         "label": "Tokens (classic)",
+         "description": "Tokens you have generated that can be used to access the GitHub API.",
+         "items": [
+          "old-ci-token \u00b7 repo, workflow \u00b7 Never used \u00b7 Expires on Oct 1, 2026"
+         ],
+         "id": "u-developer-tokens-classic",
+         "section": "Personal access tokens (classic)"
+        },
+        {
+         "type": "button",
+         "label": "Generate new token (classic)",
+         "description": "",
+         "id": "u-developer-generate-new-token-classic",
+         "section": "Personal access tokens (classic)"
+        },
+        {
+         "type": "danger-button",
+         "label": "Delete",
+         "description": "Delete a personal access token (classic).",
+         "id": "u-developer-delete",
+         "section": "Personal access tokens (classic)"
+        },
+        {
+         "type": "danger-button",
+         "label": "Revoke all",
+         "description": "Revoke every personal access token (classic) on your account.",
+         "id": "u-developer-revoke-all",
+         "section": "Personal access tokens (classic)"
+        }
+       ]
+      }
+     ],
+     "about": "Building on GitHub: register GitHub Apps and OAuth Apps, and create personal access tokens."
+    }
+   ]
+  }
+ ]
+}
