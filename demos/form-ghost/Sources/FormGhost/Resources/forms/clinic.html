@@ -1,0 +1,23 @@
+<!doctype html><html><head><meta charset="utf-8"><title>New Patient Intake</title><link rel="stylesheet" href="style.css">
+<style>:root{--bg:#eaf5f3;--accent:#0f766e} main{border-top:6px solid #0f766e}</style></head><body>
+<header class="brand" style="color:#0f766e">🩺 Riverbend Family Clinic</header>
+<main>
+<h1>New patient intake</h1><p class="lede">Please complete before your first visit.</p>
+<fieldset><legend>Patient</legend><div class="row">
+<div><label for="pn">Patient name</label><input id="pn" type="text"></div>
+<div><label for="pd">Date of birth</label><input id="pd" type="text" placeholder="YYYY-MM-DD"></div>
+<div><label for="pp">Preferred pronouns</label><input id="pp" type="text"></div></div>
+<div class="row"><div><label for="pe">Email</label><input id="pe" type="email"></div>
+<div><label for="pm">Mobile phone</label><input id="pm" type="tel"></div></div>
+<div class="row"><div><label for="pa">Home address</label><input id="pa" type="text"></div></div></fieldset>
+<fieldset><legend>Insurance</legend><div class="row">
+<div><label for="ic">Insurance carrier</label><input id="ic" type="text"></div>
+<div><label for="im">Member ID</label><input id="im" type="text"></div>
+<div><label for="ig">Group number</label><input id="ig" type="text"></div></div></fieldset>
+<fieldset><legend>Health</legend><div class="row">
+<div><label for="al">Allergies</label><input id="al" type="text"></div>
+<div><label for="md">Current medications</label><input id="md" type="text"></div>
+<div><label for="pc">Primary care physician</label><input id="pc" type="text"></div></div>
+<div class="check"><input id="hipaa" type="checkbox"><label for="hipaa">I acknowledge receipt of the Notice of Privacy Practices</label></div>
+<div class="check"><input id="sms" type="checkbox"><label for="sms">Send appointment reminders by text message</label></div></fieldset>
+<button type="button" class="secondary">Save draft</button> <button type="button">Submit</button></main></body></html>

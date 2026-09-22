@@ -1,0 +1,11 @@
+Patient name: Sam Whitfield
+Date of birth: 1984-02-29
+Pronouns: they/them
+Email: sam.whitfield@example.invalid
+Mobile phone: (206) 555-0110
+Home address: 910 Alder Court, Seattle, WA 98122
+Insurance carrier: Cascade Mutual
+Member ID: CM-55501234
+Group number: 88213
+Allergies: Penicillin
+Current medications: None

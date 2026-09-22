@@ -1,0 +1,12 @@
+Email: jordan.reyes@example.invalid
+Phone: (415) 555-0199
+Name: Jordan Reyes
+Street address: 88 Juniper Street
+Apartment: Unit 4B
+City: San Francisco
+State: CA
+ZIP: 94110
+Name on card: Jordan A Reyes
+Card number: 4242 4242 4242 4242
+Expiration: 08/29
+Security code: 314
