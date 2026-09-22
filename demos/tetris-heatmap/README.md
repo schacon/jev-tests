@@ -17,21 +17,32 @@ swift run -c release TetrisHeatmap
 - Space plays/pauses, **S** steps one piece, the segmented control swaps in the heuristic
   policy for comparison, and the pacing sliders slow things down (pauses aren't timed).
 
-## Three policies
+## Three columns
 
-| Policy | Where it runs | Calls per piece |
-|---|---|---|
-| **laya** | on-device, Neural Engine (~4 ms each) | one per landing |
-| **Jev API** | [TypeSafe](https://docs.typesafe.ai/api) `jev-latest` over HTTPS | one request, a Noul per landing |
-| **Heuristic** | Dellacherie-style formula, no model | — |
+laya, Kev and Jev play the same seed in lockstep: laya history | laya | Kev | Kev history | Jev | Jev history.
+
+| Column | Where it runs | Calls per piece | Measured here (M-series Mac, 30 pieces) |
+|---|---|---|---|
+| **laya** | on-device, Neural Engine | one per landing | ~4 ms per call, ~90–150 ms per piece |
+| **Kev** ([jaredpalmer/kev](https://github.com/jaredpalmer/kev)) | local Python server on the Mac GPU (MPS) | one request, a Noul per landing | ~850 ms mean per piece, ~1.6 s p95 |
+| **Jev API** | [TypeSafe](https://docs.typesafe.ai/api) `jev-latest` over HTTPS | one request, a Noul per landing | ~400 ms mean round trip, ≈ $0.00012 per piece |
+
+Kev serves the same `/v1/systemone` API as Jev, so both use one client. Start it first:
+
+```bash
+scripts/kev-server.sh     # clones Kev to ~/.cache/kev, uv sync, serves Kev-4B (Qwen3) on 127.0.0.1:8009
+```
+
+The first run downloads about 8 GB. `KEV_RUN=jaredpalmer/kev-4b` picks the newer Qwen3.5 generation,
+which the Kev README measures as ~4× slower on Apple Silicon. `KEV_URL` points the app elsewhere. If
+no server answers, the Kev column says so and the other two keep playing.
 
 For Jev, put `JEV_API_KEY=…` in the repo's `.env` (git-ignored; the app walks up from the working
-directory to find it), export it, or paste a key into the sidebar (kept in memory only).
+directory to find it), export it, or paste a key into the toolbar (kept in memory only).
 Each request carries `{"piece", "landings": [sentence…]}` as state and asks
 "Is `landings[i]` a clean placement…?" with explicit clean/messy criteria for every landing, so
-each judgment sees the alternatives. The sidebar shows round-trip time, tokens, and the model
-version; answers arrive together and are revealed in sweep order so the heatmap still animates.
-`TETRIS_AUTORUN=1 TETRIS_POLICY=jev` runs the smoke test against the API.
+each judgment sees the alternatives. `TETRIS_AUTORUN=1` plays 30 pieces in all three columns and
+prints a summary per column.
 
 Colors are relative per piece: laya's raw P(clean) sits in a narrow band (about 5–45%),
 so the ramp is stretched to that piece's min–max; the legend shows the actual range.

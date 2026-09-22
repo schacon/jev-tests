@@ -339,7 +339,11 @@ final class GameModel: ObservableObject, Identifiable {
         switch policy {
         case .laya:
             line += String(format: ", %d calls, mean %.2f ms, p95 %.2f ms", s.latencies.count, s.mean, s.percentile(0.95))
-        case .jev, .kev:
+        case .kev:
+            line += String(
+                format: ", %d requests, round trip mean %.0f ms, p95 %.0f ms, %d input tokens, local so $0 (%@)",
+                s.jevRequests.count, s.jevMean, s.jevPercentile(0.95), s.jevInputTokens, s.jevModel)
+        case .jev:
             line += String(
                 format: ", %d requests, round trip mean %.0f ms, p95 %.0f ms, %d input tokens ≈ $%.5f ($%.2f per 1,000 games of this length) (%@)",
                 s.jevRequests.count, s.jevMean, s.jevPercentile(0.95), s.jevInputTokens, s.jevCost, s.jevCost * 1000, s.jevModel)
